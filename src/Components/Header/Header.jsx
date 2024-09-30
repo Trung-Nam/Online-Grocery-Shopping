@@ -1,12 +1,12 @@
 import React from 'react'
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { IoIosSearch } from 'react-icons/io';
 import Location from './Location';
 import Logo from '../../assets/images/Logo.png'
 import './Header.scss';
 import { FiUser } from 'react-icons/fi';
 import { TbShoppingBag } from 'react-icons/tb';
+import Search from './Search';
 
 
 const Header = () => {
@@ -33,15 +33,7 @@ const Header = () => {
                             <Location />
 
                             {/* Header search start */}
-                            <div className="header-search ms-3 me-3 d-flex align-items-center">
-                                <input
-                                    type="text"
-                                    placeholder='Search for products...'
-                                />
-                                <button>
-                                    <IoIosSearch fontSize='25px' />
-                                </button>
-                            </div>
+                            <Search />
                             {/* Header search end */}
                         </div>
 

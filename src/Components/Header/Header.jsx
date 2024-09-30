@@ -7,6 +7,8 @@ import './Header.scss';
 import { FiUser } from 'react-icons/fi';
 import { TbShoppingBag } from 'react-icons/tb';
 import Search from './Search';
+import Navigation from './Navigation';
+
 
 
 const Header = () => {
@@ -55,6 +57,8 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+
+            <Navigation />
 
         </div>
     )

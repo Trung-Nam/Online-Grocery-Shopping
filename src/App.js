@@ -1,13 +1,16 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
+import { LocationProvider } from './Context/LocationContext';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" exact={true} element={<Home />} />
-      </Routes>
+      <LocationProvider>
+        <Routes>
+          <Route path="/" exact={true} element={<Home />} />
+        </Routes>
+      </LocationProvider>
     </BrowserRouter>
   );
 }

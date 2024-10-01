@@ -1,5 +1,7 @@
 import React from 'react'
 import { IoIosSearch } from 'react-icons/io';
+import './Search.scss'
+
 const Search = () => {
     return (
         <div className="header-search ms-3 me-3 d-flex align-items-center">

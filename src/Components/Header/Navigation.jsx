@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { IoIosMenu } from 'react-icons/io';
-import { FaAngleDown, FaAngleRight } from 'react-icons/fa6';
+import { FaAngleDown } from 'react-icons/fa6';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import Dropdown from './Dropdown/Dropdown';
+import  categoriesDropdown  from '../../Constants/Data'
+
 const Navigation = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -27,58 +30,7 @@ const Navigation = () => {
                                 </span>
                             </Button>
                             {isDropdownOpen && (
-                                <ul className="dropdown-menu custom-dropdown-menu">
-                                    <li>
-                                        <a className="dropdown-item d-flex align-items-center" href="/">
-                                            <img src={require('../../assets/images/vegetable.png')} alt="vegetable-icon" />
-                                            Fruits & Vegetables
-                                            <FaAngleRight />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item d-flex align-items-center" href="/">
-                                            <img src={require('../../assets/images/barbecue.png')} alt="meat-icon" />
-                                            Meats & Seafood
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item d-flex align-items-center" href="/">
-                                            <img src={require('../../assets/images/english-breakfast.png')} alt="breakfast-icon" />
-                                            Breakfast & Dairy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item d-flex align-items-center" href="/">
-                                            <img src={require('../../assets/images/healthy-drink.png')} alt="healthy-drink-icon" />
-                                            Beverages
-                                            <FaAngleRight />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item d-flex align-items-center" href="/">
-                                            <img src={require('../../assets/images/bread.png')} alt="bread-icon" />
-                                            Breads & Bakery
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item d-flex align-items-center" href="/">
-                                            <img src={require('../../assets/images/frozen-food.png')} alt="frozen-food-icon" />
-                                            Frozen Foods
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="/">
-                                            <img src={require('../../assets/images/bar.png')} alt="bar-icon" />
-                                            Biscuits & Snacks
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="/">
-                                            <img src={require('../../assets/images/basket.png')} alt="basket-icon" />
-                                            Grocery & Staples
-                                        </a>
-                                    </li>
-                                </ul>
+                                <Dropdown items={categoriesDropdown}/>
                             )}
                         </div>
                         <div className="all-categories-description">TOTAL 63 PRODUCTS</div>

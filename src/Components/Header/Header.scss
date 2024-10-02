@@ -127,51 +127,6 @@
                 padding-left: .5rem;
                 padding-right: .5rem;
             }
-
-            .dropdown {
-                transition: all 0.5s ease-in-out;
-
-                .custom-dropdown-menu {
-                    display: block;
-                    top: 65px;
-                    min-width: 250px;
-
-                    border-left: 1px solid #dee2e6;
-                    border-top: none;
-                    border-right: 1px solid #dee2e6;
-                    border-bottom: 1px solid #dee2e6;
-                    box-shadow: none;
-                    border-top-left-radius: 0;
-                    border-top-right-radius: 0;
-
-                    padding-top: 1.125rem;
-                    padding-bottom: 1.125rem;
-
-
-
-
-                    .dropdown-item {
-                        width: 100%;
-                        padding: 15px 15px;
-                        font-size: 0.875rem;
-                        text-decoration: none;
-                        position: relative;
-
-                        img {
-                            width: 18px;
-                            height: 18px;
-                            margin: 0px 10px;
-                        }
-
-                        svg {
-                            position: absolute;
-                            right: 20px;
-                        }
-                    }
-                }
-            }
-
-
         }
 
         .primary-menu {

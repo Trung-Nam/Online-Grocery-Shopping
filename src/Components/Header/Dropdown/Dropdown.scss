@@ -50,7 +50,7 @@
         top: 16px;
         left: 100%;
         min-width: 250px;
-        min-height: 445px;
+        height: 445px;
         border: 1px solid #dee2e6;
         border-top: none;
         box-shadow: none;
@@ -58,7 +58,7 @@
         background-color: white;
         padding-top: 1.125rem;
         padding-bottom: 1.125rem;
-
+        overflow-y: scroll;
         li {
             width: 100%;
             list-style: none;

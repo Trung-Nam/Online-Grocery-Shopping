@@ -25,7 +25,7 @@ const Dropdown = ({ items }) => {
 
 
             {activeSubmenu && (
-                <ul className="submenu">
+                <ul className="dropdown-menu submenu">
                     {activeSubmenu.map((subItem, subIndex) => (
                         <li key={subIndex}>
                             <a className="dropdown-item d-flex align-items-center" href={subItem.link}>

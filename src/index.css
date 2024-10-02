@@ -4,13 +4,36 @@
 :root {
   --font-base: "Dosis", sans-serif;
 
-  --primary-color: #233a95;
-  --secondary-color: #313bac;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
-  --brown-color: #46364a;
-  --white-color: #ffffff;
+  --color-background: #fff;
+  --color-primary: #233a95;
+  --color-secondary: #2bbef9;
+  --color-price: #d51243;
+  --color-rating: #ffcd00;
+  --color-text: #202435;
+  --color-text-light: #3e445a;
+  --color-text-lighter: #71778e;
+  --color-light: #f7f8fd;
+  --color-lighter: #fbfcfe;
+  --color-border: #e4e5ee;
+  --color-border-dark: #d9d9e9;
+  --color-border-light: #edeef5;
+  --color-info: #c2c2d3;
+  --color-info-dark: #9b9bb4;
+  --color-info-light: #f3f3f6;
+  --color-success: #00b853;
+  --color-success-dark: #038e42;
+  --color-success-light: #e5f8ed;
+  --color-danger: #ed174a;
+  --color-danger-dark: #be143c;
+  --color-danger-light: #ffeef2;
+  --color-warning: #ff6048;
+  --color-warning-dark: #ea2b0f;
+  --color-warning-light: #ffefec;
+  --color-form-background: #f3f4f7;
+  --color-placeholder: #9595a9;
+  --color-black: #000;
+  --color-white: #fff;
+
 }
 
 * {

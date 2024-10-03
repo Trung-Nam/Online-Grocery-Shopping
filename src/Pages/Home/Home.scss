@@ -1,0 +1,15 @@
+.container {
+    .widget-container {
+        margin-bottom: 50px;
+
+        .banner-content {
+            position: absolute;
+            padding: 1.875rem 2.5rem;
+        }
+
+        .color-price {
+            color: var(--color-price);
+            font-size: 1.875rem;
+        }
+    }
+}

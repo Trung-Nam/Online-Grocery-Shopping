@@ -5,7 +5,7 @@ import { FaCircleArrowRight } from 'react-icons/fa6'
 
 const Carousel = () => {
   return (
-    <div className="container">
+    <div className="container mb-5">
       <div id="carousel"
         className="carousel carousel-dark slide custom-carousel
       col-12 m-auto mt-5"

@@ -1,0 +1,90 @@
+.custom-carousel {
+    position: relative;
+
+    .content-wrapper {
+        max-width: 50%;
+        position: absolute;
+        top: 15%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        .content-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.9375rem;
+
+            .content-description {
+                font-size: .75rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .content-discount {
+                font-size: .875rem;
+                font-weight: 600;
+                padding: 8px 12px;
+                margin: 0px 10px 3px 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: var(--color-success-dark);
+                background-color: rgba(0, 255, 200, 0.1);
+                border-radius: 30px;
+            }
+        }
+
+        .content-main {
+            margin-bottom: .9375rem;
+
+            .entry-title {
+                font-size: 3rem;
+                font-weight: 700;
+                letter-spacing: -.7px;
+            }
+
+            .content-text {
+                box-sizing: border-box;
+            }
+        }
+
+        .content-footer {
+            box-sizing: border-box;
+            margin-bottom: 1.5rem;
+
+            .price-text {
+                box-sizing: border-box;
+                margin-right: 4px;
+
+            }
+
+            .price {
+                font-size: 2.25rem;
+                color: var(--color-price);
+                font-weight: "bold";
+            }
+        }
+
+        .custom-btn {
+            text-decoration: none;
+            margin-top: 1rem;
+            padding: 12px 18px;
+            border-radius: 30px;
+            color: #fff;
+            background-color: var(--color-secondary);
+            border-color: var(--color-secondary);
+
+            .btn-icon {
+                font-size: 24px;
+                margin: 0px 0px 5px 10px;
+            }
+        }
+    }
+
+    .carousel-control-prev {
+        left: -40px;
+    }
+
+    .carousel-control-next {
+        right: -40px;
+    }
+}

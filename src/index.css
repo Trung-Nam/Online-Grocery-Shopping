@@ -3,6 +3,7 @@
 
 :root {
   --font-base: "Dosis", sans-serif;
+  --font-primary: "Lato", sans-serif;
 
   --color-background: #fff;
   --color-primary: #233a95;
@@ -33,7 +34,6 @@
   --color-placeholder: #9595a9;
   --color-black: #000;
   --color-white: #fff;
-
 }
 
 * {

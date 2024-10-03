@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from '../../Components/Header/Carousel/Carousel'
 import './Home.scss'
 import Slider from 'react-slick'
+import { FaArrowRightLong } from 'react-icons/fa6'
 const Home = () => {
 
     var settings = {
@@ -76,7 +77,28 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
+                <div class="col-9">
+                    <div class="module-header d-flex justify-content-center">
+                        <div class="col-10">
+                            <h4 class="entry-title">Best Sellers</h4>
+                            <div class="entry-description">Do not miss the current offers until the end of March.</div>
+                        </div>
+                        <div class="col-2">
+                            <a class="view-all-button" href="/">View All <FaArrowRightLong /></a>
+                        </div>
+                    </div>
+                    <Slider {...settings}>
+                        <div className="product__item">
+                            <div className="product__item-image">
+                                <img
+                                    src={require("../../assets/images/product-image.jpg")}
+                                    alt="product-image"
+                                    className='w-100'
+                                />
+                            </div>
+                        </div>
+                    </Slider>
+                </div>
             </section>
         </>
     )

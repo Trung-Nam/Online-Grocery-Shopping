@@ -145,19 +145,167 @@ const Home = () => {
                                 </div>
                                 <div className="item">
                                     <div className="icon">
-                                        <FaListCheck size={28}/>
+                                        <FaListCheck size={28} />
                                     </div>
                                     <div className="text">Order now so you don't miss the opportunities.</div>
                                 </div>
                                 <div className="item">
                                     <div className="icon">
-                                        <LuClock3 size={30}/>
+                                        <LuClock3 size={30} />
                                     </div>
                                     <div className="text">Your order will arrive at your door in 15 minutes.</div>
                                 </div>
                             </div>
                         </div>
 
+                    </div>
+                    <div className="widget-container">
+                        <h4 className="widget-title">Trending Products</h4>
+                        <div className="widget-body">
+                            <div className="trending-products-list">
+                                <div className="product product-type-simple border">
+                                    <div className="product-wrapper">
+                                        <div className="thumbnail-wrapper">
+                                            <a href="/" title="USDA Choice Angus Beef Stew Meat">
+                                                <img decoding="async" className="w-100" src={require('../../assets/images/product-image-3.jpg')} alt="USDA Choice Angus Beef Stew Meat" />
+                                            </a>
+                                        </div>
+                                        <div className="content-wrapper">
+                                            <h3 className="product-title">
+                                                <a href="/">
+                                                    USDA Choice Angus Beef Stew Meat
+                                                </a>
+                                            </h3>
+                                            <div className="product-meta"></div>
+                                            <span className="price">
+                                                <del aria-hidden="true">
+                                                    <span className="trending-product-amount amount">
+                                                        <bdi>
+                                                            <span className="trending-product-currency">$</span>79.99
+                                                        </bdi>
+                                                    </span>
+                                                </del>
+
+                                                <ins aria-hidden="true">
+                                                    <span className="trending-product-amount amount">
+                                                        <bdi>
+                                                            <span className="trending-product-currency">$</span>49.99
+                                                        </bdi>
+                                                    </span>
+                                                </ins>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product product-type-simple border">
+                                    <div className="product-wrapper">
+                                        <div className="thumbnail-wrapper">
+                                            <a href="/" title="USDA Choice Angus Beef Stew Meat">
+                                                <img decoding="async" className="w-100" src={require('../../assets/images/product-image-3.jpg')} alt="USDA Choice Angus Beef Stew Meat" />
+                                            </a>
+                                        </div>
+                                        <div className="content-wrapper">
+                                            <h3 className="product-title">
+                                                <a href="/">
+                                                    USDA Choice Angus Beef Stew Meat
+                                                </a>
+                                            </h3>
+                                            <div className="product-meta"></div>
+                                            <span className="price">
+                                                <del aria-hidden="true">
+                                                    <span className="trending-product-amount amount">
+                                                        <bdi>
+                                                            <span className="trending-product-currency">$</span>79.99
+                                                        </bdi>
+                                                    </span>
+                                                </del>
+
+                                                <ins aria-hidden="true">
+                                                    <span className="trending-product-amount amount">
+                                                        <bdi>
+                                                            <span className="trending-product-currency">$</span>49.99
+                                                        </bdi>
+                                                    </span>
+                                                </ins>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product product-type-simple border">
+                                    <div className="product-wrapper">
+                                        <div className="thumbnail-wrapper">
+                                            <a href="/" title="USDA Choice Angus Beef Stew Meat">
+                                                <img decoding="async" className="w-100" src={require('../../assets/images/product-image-3.jpg')} alt="USDA Choice Angus Beef Stew Meat" />
+                                            </a>
+                                        </div>
+                                        <div className="content-wrapper">
+                                            <h3 className="product-title">
+                                                <a href="/">
+                                                    USDA Choice Angus Beef Stew Meat
+                                                </a>
+                                            </h3>
+                                            <div className="product-meta"></div>
+                                            <span className="price">
+                                                <del aria-hidden="true">
+                                                    <span className="trending-product-amount amount">
+                                                        <bdi>
+                                                            <span className="trending-product-currency">$</span>79.99
+                                                        </bdi>
+                                                    </span>
+                                                </del>
+
+                                                <ins aria-hidden="true">
+                                                    <span className="trending-product-amount amount">
+                                                        <bdi>
+                                                            <span className="trending-product-currency">$</span>49.99
+                                                        </bdi>
+                                                    </span>
+                                                </ins>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product product-type-simple border">
+                                    <div className="product-wrapper">
+                                        <div className="thumbnail-wrapper">
+                                            <a href="/" title="USDA Choice Angus Beef Stew Meat">
+                                                <img decoding="async" className="w-100" src={require('../../assets/images/product-image-3.jpg')} alt="USDA Choice Angus Beef Stew Meat" />
+                                            </a>
+                                        </div>
+                                        <div className="content-wrapper">
+                                            <h3 className="product-title">
+                                                <a href="/">
+                                                    USDA Choice Angus Beef Stew Meat
+                                                </a>
+                                            </h3>
+                                            <div className="product-meta"></div>
+                                            <span className="price">
+                                                <del aria-hidden="true">
+                                                    <span className="trending-product-amount amount">
+                                                        <bdi>
+                                                            <span className="trending-product-currency">$</span>79.99
+                                                        </bdi>
+                                                    </span>
+                                                </del>
+
+                                                <ins aria-hidden="true">
+                                                    <span className="trending-product-amount amount">
+                                                        <bdi>
+                                                            <span className="trending-product-currency">$</span>49.99
+                                                        </bdi>
+                                                    </span>
+                                                </ins>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="col-9">

@@ -271,6 +271,7 @@
 
     .module-body-banner {
         margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
 
         .banner-wrapper {
             position: relative;
@@ -310,6 +311,140 @@
                 }
             }
         }
+    }
+
+    .hot-product {
+        position: relative;
+        padding: 1.875rem;
+        flex-direction: column;
+        border: 1px solid var(--color-danger);
+
+        .product {
+            .hot-sale {
+                width: 3.125rem;
+                height: 3.125rem;
+                position: absolute;
+                top: 35px;
+                left: 50px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #fff;
+                background-color: var(--color-danger);
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            .content-wrapper {
+                .thumbnail-wrapper {
+                    margin-right: 1.25rem;
+                }
+
+                .hot-product-header {
+                    .price {
+                        display: block;
+                        font-size: 1.125rem;
+                        margin-bottom: .625rem;
+
+                        del {
+                            font-size: 85%;
+                            color: var(--color-info);
+                        }
+
+                        ins {
+                            text-decoration: none;
+                            margin-left: .3125rem;
+
+                            .hot-product-amount {
+                                color: var(--color-price);
+                            }
+                        }
+                    }
+                }
+
+                .product-title {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    line-height: 1.4;
+
+                    a {
+                        color: var(--color-black);
+                        text-decoration: none;
+                    }
+
+                }
+
+                .product-meta {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    font-size: .75rem;
+                    margin-bottom: .625rem;
+
+                    .product-unit {
+                        color: var(--color-info-dark);
+                    }
+
+                    .product-available {
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        color: var(--color-success);
+                        margin-left: 10px;
+                    }
+                }
+
+                .product-progress {
+                    margin-top: 1.25rem;
+                    position: relative;
+                    width: 100%;
+                    height: .625rem;
+                    border-radius: .75rem;
+                    background-color: var(--color-border-light);
+                    overflow: hidden;
+
+                    .progress {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        border-radius: .75rem;
+                        background: #d51243;
+                        background: linear-gradient(90deg, #d51243 0%, #ff6048 50%, #ffcd00 100%);
+                    }
+
+                }
+
+                .product-expired {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1.25rem;
+
+                    .countdown .count-item {
+                        position: relative;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: .875rem;
+                        width: 1.75rem;
+                        height: 1.875rem;
+                        color: var(--color-text-light);
+                        background-color: var(--color-border-light);
+                        margin: 0 4px;
+                    }
+
+                    .expired-text {
+                        font-size: .6875rem;
+                        margin-left: .75rem;
+                        color: var(--color-text-light);
+                    }
+                }
+            }
+        }
+
+
     }
 
 }

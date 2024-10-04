@@ -410,6 +410,70 @@ const Home = () => {
                             {/* <a href="/" className="overlay-link"></a> */}
                         </div>
                     </div>
+
+                    <div className="module-header d-flex justify-content-center">
+                        <div className="col-10">
+                            <h4 className="entry-title">HOT PRODUCT FOR <span className="text-danger">THIS WEEK</span></h4>
+                            <div className="entry-description">Dont miss this opportunity at a special discount just for this week.</div>
+                        </div>
+                        <div className="col-2">
+                            <a className="view-all-button" href="/">View All <FaArrowRightLong size={14} style={{ marginLeft: '4px', marginBottom: '2px' }} /></a>
+                        </div>
+                    </div>
+
+                    <div className="hot-product rounded">
+                        <div className="product">
+                            <div className="hot-sale">19%</div>
+
+                            <div className="hot-product-content d-flex">
+                                <div class="thumbnail-wrapper col-3">
+                                    <a href="/" title="Chobani Complete Vanilla Greek Yogurt">
+                                        <img decoding="async" className='w-100' src={require('../../assets/images/product-image-2.jpg')} alt="Chobani Complete Vanilla Greek Yogurt" />
+                                    </a>
+                                </div>
+
+                                <div className="content-wrapper col-9">
+                                    <div className="hot-product-header">
+                                        <span className="price">
+                                            <del aria-hidden="true">
+                                                <span className="hot-product-amount">
+                                                    <bdi>
+                                                        <span className="">$</span>5.49
+                                                    </bdi>
+                                                </span>
+                                            </del>
+                                            <ins aria-hidden="true">
+                                                <span className="hot-product-amount">
+                                                    <bdi>
+                                                        <span className="">$</span>4.49
+                                                    </bdi>
+                                                </span>
+                                            </ins>
+                                        </span>
+                                    </div>
+                                    <h3 className="product-title">
+                                        <a href="/">Chobani Complete Vanilla Greek Yogurt</a>
+                                    </h3>
+                                    <div className="product-meta">
+                                        <div className="product-unit">1 kg</div>
+                                        <div className="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div className="product-progress">
+                                        <span className="progress" style={{ width: "88%" }}></span>
+                                    </div>
+                                    <div className="product-expired">
+                                        <div className="countdown" data-date="2024/12/13">
+                                            <div className="count-item days">69</div>:<div className="count-item hours">03</div>:<div className="count-item minutes">14</div>:<div className="count-item second">59</div>
+                                        </div>
+                                        <div className="expired-text">Remains until the end of the offer</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="/" title="Chobani Complete Vanilla Greek Yogurt" class="overlay-link"></a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

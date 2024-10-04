@@ -7,6 +7,12 @@
             padding: 1.875rem 2.5rem;
         }
 
+        .banner-thumbnail {
+            img {
+                width: 88%;
+            }
+        }
+
         .color-price {
             color: var(--color-price);
             font-size: 1.875rem;
@@ -14,6 +20,8 @@
     }
 
     .module-header {
+        margin-bottom: 1.875rem;
+
         .entry-title {
             font-size: 1.25rem;
             font-weight: 600;
@@ -55,8 +63,10 @@
                 top: 1.125rem;
                 left: 1.125rem;
                 pointer-events: none;
+                display: flex;
+                flex-direction: column;
 
-                .badge {
+                .badge.on-sale {
                     display: inline-block;
                     padding: .5em .6em;
                     font-size: 75%;
@@ -68,16 +78,33 @@
                     border-radius: .25rem;
                     background-color: var(--color-secondary);
                 }
+
+                .badge.recommended {
+                    width: auto;
+                    font-size: .625rem;
+                    font-weight: 700;
+                    color: #fff;
+                    margin-top: 3px;
+                    display: inline-flex;
+                    align-items: center;
+                    font-family: var(--font-secondary);
+                    text-transform: uppercase;
+                    letter-spacing: 0;
+                    max-height: 1.5rem;
+                    padding: .375rem .75rem;
+                    background-color: var(--color-info-dark);
+                }
             }
         }
 
         .product-buttons {
             position: absolute;
-            display: inline-flex;
             flex-direction: column;
             top: .9375rem;
             right: .9375rem;
-
+            display: none;
+            
+ 
             .quick-view-button,
             .like-btn {
                 display: flex;
@@ -87,10 +114,28 @@
                 height: 40px;
                 border-radius: 50%;
                 background-color: var(--color-white);
+                transition: background-color 0.3s ease, transform 0.3s ease;
 
                 svg {
                     width: 16px;
                     height: 16px;
+                    transition: color 0.3s ease;
+                }
+
+                path {
+                    transition: fill 0.3s ease;
+                }
+
+                &:hover {
+                    background-color: var(--color-primary);
+                    transform: scale(1.05);
+                    svg {
+                        color: var(--color-white);
+                    }
+
+                    path {
+                        fill: var(--color-white);
+                    }
                 }
             }
 
@@ -102,6 +147,7 @@
                 }
             }
         }
+
 
         .content-wrapper {
             .product-title {
@@ -194,5 +240,17 @@
                 }
             }
         }
+
+        &:hover .product-buttons {
+            display: inline-flex;
+            transition: all 1s ease-in-out;
+        }
     }
+
+    .slick-next:before,
+    .slick-prev:before {
+        content: none;
+        /* This will hide the default arrow icon */
+    }
+
 }

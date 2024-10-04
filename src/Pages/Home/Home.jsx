@@ -144,7 +144,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="best-sellers-products border">
+                    <div className="best-sellers-products border rounded">
                         <Slider {...settings}>
                             <div className="product-wrapper border-end">
                                 <div className="thumbnail-wrapper">
@@ -396,6 +396,19 @@ const Home = () => {
                                 </div>
                             </div>
                         </Slider>
+                    </div>
+
+                    <div className="module-body-banner w-100">
+                        <div className="banner-wrapper rounded">
+                            <div className="banner-content">
+                                <h4 className="sub-text color-info-dark">Always Taking Care</h4>
+                                <h3 className="entry-title mini color-text-lighter">In store or online your health &amp; safety is our top priority.</h3>
+                            </div>
+                            <div className="banner-thumbnail">
+                                <img decoding="async" src={require('../../assets/images/banner-box1.jpg')} alt="banner" />
+                            </div>
+                            {/* <a href="/" className="overlay-link"></a> */}
+                        </div>
                     </div>
                 </div>
             </section>

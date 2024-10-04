@@ -52,6 +52,7 @@
         }
     }
 
+
     .product-wrapper {
         padding: 1.25rem;
         position: relative;
@@ -266,6 +267,49 @@
     .slick-prev:before {
         content: none;
         /* This will hide the default arrow icon */
+    }
+
+    .module-body-banner {
+        margin-top: 1.875rem;
+
+        .banner-wrapper {
+            position: relative;
+            background-color: #F8EFEA;
+            border-radius: var(--size-border-radius);
+            overflow: hidden;
+
+
+            .banner-content {
+                width: 80%;
+                padding: 2.5rem;
+
+                .sub-text {
+                    font-size: .875rem;
+                    color: var(--color-info-dark);
+                }
+
+                .entry-title {
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    letter-spacing: -.8px;
+                    color: var(--color-text-lighter);
+                }
+            }
+
+            .banner-thumbnail {
+                position: absolute;
+                right: .625rem;
+                top: -32%;
+
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    border: none;
+                    border-radius: 0;
+                    box-shadow: none;
+                }
+            }
+        }
     }
 
 }

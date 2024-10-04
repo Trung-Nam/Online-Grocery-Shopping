@@ -2,9 +2,11 @@ import React from 'react'
 import Carousel from '../../Components/Header/Carousel/Carousel'
 import './Home.scss'
 import Slider from 'react-slick'
-import { FaArrowRightLong, FaRegHeart } from 'react-icons/fa6'
+import { FaArrowRightLong, FaListCheck, FaRegHeart } from 'react-icons/fa6'
 import { Rating } from '@mui/material'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+import { RiMobileDownloadLine } from 'react-icons/ri'
+import { LuClock3 } from 'react-icons/lu'
 const Home = () => {
 
     const CustomPrevArrow = (props) => {
@@ -131,6 +133,31 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="widget-container">
+                        <div className="widget-body">
+                            <div className="icon-boxes-widget">
+                                <div className="item">
+                                    <div className="icon">
+                                        <RiMobileDownloadLine size={30} />
+                                    </div>
+                                    <div className="text">Download the Bacola App to your Phone.</div>
+                                </div>
+                                <div className="item">
+                                    <div className="icon">
+                                        <FaListCheck size={28}/>
+                                    </div>
+                                    <div className="text">Order now so you don't miss the opportunities.</div>
+                                </div>
+                                <div className="item">
+                                    <div className="icon">
+                                        <LuClock3 size={30}/>
+                                    </div>
+                                    <div className="text">Your order will arrive at your door in 15 minutes.</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div className="col-9">
@@ -426,7 +453,7 @@ const Home = () => {
                             <div className="hot-sale">19%</div>
 
                             <div className="hot-product-content d-flex">
-                                <div class="thumbnail-wrapper col-3">
+                                <div className="thumbnail-wrapper col-3">
                                     <a href="/" title="Chobani Complete Vanilla Greek Yogurt">
                                         <img decoding="async" className='w-100' src={require('../../assets/images/product-image-2.jpg')} alt="Chobani Complete Vanilla Greek Yogurt" />
                                     </a>
@@ -471,7 +498,7 @@ const Home = () => {
 
                             </div>
 
-                            <a href="/" title="Chobani Complete Vanilla Greek Yogurt" class="overlay-link"></a>
+                            <a href="/" title="Chobani Complete Vanilla Greek Yogurt" className="overlay-link"></a>
                         </div>
                     </div>
                 </div>

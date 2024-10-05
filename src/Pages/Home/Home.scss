@@ -195,10 +195,10 @@
         }
     }
 
-
-    .product-wrapper {
+    .best-sellers-product-wrapper {
         padding: 1.25rem;
         position: relative;
+        background-color: var(--color-white);
 
         .thumbnail-wrapper {
             .product-badges {
@@ -404,6 +404,7 @@
             display: inline-flex;
             transition: all 1s ease-in-out;
         }
+
     }
 
     .slick-next:before,

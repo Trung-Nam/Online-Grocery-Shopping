@@ -7,6 +7,7 @@ import { Rating } from '@mui/material'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { RiMobileDownloadLine } from 'react-icons/ri'
 import { LuClock3 } from 'react-icons/lu'
+import Product from '../../Components/Product/Product'
 const Home = () => {
 
     const CustomPrevArrow = (props) => {
@@ -368,7 +369,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="col-9">
-                    <div className="module-header d-flex justify-content-center">
+                    <div className="module-header d-flex justify-content-center align-items-center">
                         <div className="col-10">
                             <h4 className="entry-title">Best Sellers</h4>
                             <div className="entry-description">Do not miss the current offers until the end of March.</div>
@@ -380,7 +381,7 @@ const Home = () => {
 
                     <div className="best-sellers-products border rounded">
                         <Slider {...settings}>
-                            <div className="product-wrapper border-end">
+                            <div className="best-sellers-product-wrapper border-end">
                                 <div className="thumbnail-wrapper">
                                     <div className="product-badges">
                                         <span className="badge on-sale">26%</span>
@@ -443,7 +444,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="product-wrapper border-end">
+                            <div className="best-sellers-product-wrapper border-end">
                                 <div className="thumbnail-wrapper">
                                     <div className="product-badges">
                                         <span className="badge on-sale">26%</span>
@@ -505,7 +506,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="product-wrapper border-end">
+                            <div className="best-sellers-product-wrapper border-end">
                                 <div className="thumbnail-wrapper">
                                     <div className="product-badges">
                                         <span className="badge on-sale">26%</span>
@@ -567,7 +568,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="product-wrapper border-end">
+                            <div className="best-sellers-product-wrapper border-end">
                                 <div className="thumbnail-wrapper">
                                     <div className="product-badges">
                                         <span className="badge on-sale">26%</span>
@@ -645,7 +646,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="module-header d-flex justify-content-center">
+                    <div className="module-header d-flex justify-content-center align-items-center">
                         <div className="col-10">
                             <h4 className="entry-title">HOT PRODUCT FOR <span className="text-danger">THIS WEEK</span></h4>
                             <div className="entry-description">Dont miss this opportunity at a special discount just for this week.</div>
@@ -721,6 +722,26 @@ const Home = () => {
                         </div>
                     </div>
 
+                    <div className="module-header d-flex justify-content-center align-items-center">
+                        <div className="col-10">
+                            <h4 className="entry-title">NEW PRODUCTS</h4>
+                            <div className="entry-description">New products with updated stocks.</div>
+                        </div>
+                        <div className="col-2">
+                            <a className="view-all-button" href="/">View All <FaArrowRightLong size={14} style={{ marginLeft: '4px', marginBottom: '2px' }} /></a>
+                        </div>
+                    </div>
+
+                    <div className="products d-flex flex-wrap border rounded">
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                    </div>
                 </div>
             </section>
         </>

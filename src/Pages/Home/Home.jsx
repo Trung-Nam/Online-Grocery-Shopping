@@ -708,6 +708,19 @@ const Home = () => {
                             <a href="/" title="Chobani Complete Vanilla Greek Yogurt" className="overlay-link"></a>
                         </div>
                     </div>
+
+                    <div className="module-purchase-banner">
+                        <div className="module-body">
+                            <a href="/">
+                                <span className="purchase-text">
+                                    Super discount for your <strong>first purchase.</strong>
+                                </span>
+                                <span className="purchase-code">FREE25BAC</span>
+                                <span className="purchase-description">Use discount code in checkout!</span>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </>

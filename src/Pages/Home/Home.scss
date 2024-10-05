@@ -633,4 +633,164 @@
             color: var(--color-info-dark);
         }
     }
+
+    .ads-banner {
+        position: relative;
+        // overflow: hidden;
+        border-radius: 8px;
+        margin-top: 1.875rem;
+
+        .banner-wrapper {
+            .banner-content {
+                position: absolute;
+                max-width: 70%;
+                padding: 1.875rem 2.5rem;
+
+                .content-header {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: .625rem;
+
+                    .discount-text {
+                        font-family: var(--font-secondary);
+                        font-size: .875rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 0;
+                        color: #00b853;
+                    }
+                }
+
+                .content-main {
+                    margin-bottom: 2rem;
+
+                    .entry-title {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        letter-spacing: -.8px;
+                        color: #3e445a;
+                    }
+
+                    .entry-text {
+                        font-size: .75rem;
+                        color: #9b9bb4;
+                    }
+                }
+
+                a {
+                    padding: 10px 20px;
+                    font-size: .75rem;
+                    font-weight: 500;
+                    border: 1px solid;
+                    border-radius: 30px !important;
+                    color: #fff;
+                    background-color: var(--color-info);
+                    border-color: var(--color-info);
+                    text-decoration: none;
+                }
+            }
+
+            .banner-thumbnail {
+                display: flex;
+                justify-content: space-around;
+                align-items: space-around;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+.module-category {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+
+    .categories {
+        .first {
+            display: flex;
+            align-items: center;
+            flex: 0 0 20%;
+            max-width: 20%;
+            text-align: inherit;
+            border-bottom: 0;
+            border: 1px solid var(--color-border);
+
+            .category {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 1.25rem;
+
+                .category-image {
+                    img {
+                        height: 192px;
+                        width: 192px;
+                    }
+                }
+
+                .category-detail {
+                    .entry-category {
+                        font-size: .875rem;
+                        font-weight: 600;
+
+                        a {
+                            color: var(--color-text);
+                            text-decoration: none;
+                        }
+                    }
+
+                    .category-count {
+                        font-size: .75rem;
+                        font-weight: 300;
+                    }
+                }
+
+            }
+        }
+
+        .categories-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+
+            .category {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 50%;
+                padding: 0 20px;
+
+                .category-image {
+                    img {
+                        height: 70px;
+                        width: 70px;
+                    }
+                }
+
+                .category-detail {
+                    .entry-category {
+                        font-size: .875rem;
+                        font-weight: 600;
+
+                        a {
+                            color: var(--color-text);
+                            text-decoration: none;
+                        }
+                    }
+
+                    .category-count {
+                        font-size: .75rem;
+                        font-weight: 300;
+                    }
+                }
+
+            }
+        }
+    }
 }

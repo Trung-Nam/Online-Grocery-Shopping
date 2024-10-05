@@ -742,6 +742,218 @@ const Home = () => {
                         <Product />
                         <Product />
                     </div>
+
+                    <div className="ads-banner d-flex">
+                        <div className="col-6">
+                            <div className="banner-wrapper">
+                                <div className="banner-content">
+                                    <div className="content-header">
+                                        <div className="discount-text">Weekend Discount 40%</div>
+                                    </div>
+                                    <div className="content-main">
+                                        <h3 className="entry-title color-text-light">Legumes &amp; Cereals</h3>
+                                        <div className="entry-text color-info-dark">Feed your family the best</div>
+                                    </div>
+                                    <a href="/" className="button button-info-dark rounded xsmall">Shop Now</a>
+                                </div>
+                                <div className="banner-thumbnail">
+                                    <img decoding="async" src={require('../../assets/images/bacola-banner-1.jpg')} alt="banner" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="col-6">
+                            <div className="banner-wrapper">
+                                <div className="banner-content">
+                                    <div className="content-header">
+                                        <div className="discount-text">Weekend Discount 40%</div>
+                                    </div>
+                                    <div className="content-main">
+                                        <h3 className="entry-title">Legumes &amp; Cereals</h3>
+                                        <div className="entry-text">Feed your family the best</div>
+                                    </div>
+                                    <a href="/" className="button button-info-dark rounded xsmall">Shop Now</a>
+                                </div>
+                                <div className="banner-thumbnail">
+                                    <img decoding="async" src={require('../../assets/images/bacola-banner-2.jpg')} alt="banner" />
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section className="container module-category">
+                <div className="module-body justify-content-center w-100">
+                    <div className="categories d-flex w-100">
+                        <div className="first col-3">
+                            <div className="category">
+                                <div className="category-image">
+                                    <a href="/">
+                                        <img
+                                            decoding="async"
+                                            src={require('../../assets/images/baverages-1.jpg')}
+                                            alt="Beverages"
+                                            className='w-100'
+                                        />
+                                    </a>
+                                </div>
+                                <div className="category-detail">
+                                    <h3 className="entry-category">
+                                        <a href="/">Beverages</a>
+                                    </h3>
+                                    <div className="category-count">11 Items</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="categories-wrapper col-9">
+                            <div className="category col-3 border">
+                                <div className="category-image">
+                                    <a href="/">
+                                        <img
+                                            decoding="async"
+                                            src={require('../../assets/images/biscuitssnacks-1.jpg')}
+                                            alt="Biscuits & Snacks"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="category-detail">
+                                    <h3 className="entry-category">
+                                        <a href="/">Biscuits & Snacks</a>
+                                    </h3>
+                                    <div className="category-count">6 Items</div>
+                                </div>
+                            </div>
+                            <div className="category col-3 border">
+                                <div className="category-image">
+                                    <a href="/">
+                                        <img
+                                            decoding="async"
+                                            src={require('../../assets/images/biscuitssnacks-1.jpg')}
+                                            alt="Biscuits & Snacks"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="category-detail">
+                                    <h3 className="entry-category">
+                                        <a href="/">Biscuits & Snacks</a>
+                                    </h3>
+                                    <div className="category-count">6 Items</div>
+                                </div>
+                            </div>
+                            <div className="category col-3 border">
+                                <div className="category-image">
+                                    <a href="/">
+                                        <img
+                                            decoding="async"
+                                            src={require('../../assets/images/biscuitssnacks-1.jpg')}
+                                            alt="Biscuits & Snacks"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="category-detail">
+                                    <h3 className="entry-category">
+                                        <a href="/">Biscuits & Snacks</a>
+                                    </h3>
+                                    <div className="category-count">6 Items</div>
+                                </div>
+                            </div>
+                            <div className="category col-3 border">
+                                <div className="category-image">
+                                    <a href="/">
+                                        <img
+                                            decoding="async"
+                                            src={require('../../assets/images/biscuitssnacks-1.jpg')}
+                                            alt="Biscuits & Snacks"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="category-detail">
+                                    <h3 className="entry-category">
+                                        <a href="/">Biscuits & Snacks</a>
+                                    </h3>
+                                    <div className="category-count">6 Items</div>
+                                </div>
+                            </div>
+                            <div className="category col-3 border">
+                                <div className="category-image">
+                                    <a href="/">
+                                        <img
+                                            decoding="async"
+                                            src={require('../../assets/images/biscuitssnacks-1.jpg')}
+                                            alt="Biscuits & Snacks"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="category-detail">
+                                    <h3 className="entry-category">
+                                        <a href="/">Biscuits & Snacks</a>
+                                    </h3>
+                                    <div className="category-count">6 Items</div>
+                                </div>
+                            </div>
+                            <div className="category col-3 border">
+                                <div className="category-image">
+                                    <a href="/">
+                                        <img
+                                            decoding="async"
+                                            src={require('../../assets/images/biscuitssnacks-1.jpg')}
+                                            alt="Biscuits & Snacks"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="category-detail">
+                                    <h3 className="entry-category">
+                                        <a href="/">Biscuits & Snacks</a>
+                                    </h3>
+                                    <div className="category-count">6 Items</div>
+                                </div>
+                            </div>
+                            <div className="category col-3 border">
+                                <div className="category-image">
+                                    <a href="/">
+                                        <img
+                                            decoding="async"
+                                            src={require('../../assets/images/biscuitssnacks-1.jpg')}
+                                            alt="Biscuits & Snacks"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="category-detail">
+                                    <h3 className="entry-category">
+                                        <a href="/">Biscuits & Snacks</a>
+                                    </h3>
+                                    <div className="category-count">6 Items</div>
+                                </div>
+                            </div>
+                            <div className="category col-3 border">
+                                <div className="category-image">
+                                    <a href="/">
+                                        <img
+                                            decoding="async"
+                                            src={require('../../assets/images/biscuitssnacks-1.jpg')}
+                                            alt="Biscuits & Snacks"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="category-detail">
+                                    <h3 className="entry-category">
+                                        <a href="/">Biscuits & Snacks</a>
+                                    </h3>
+                                    <div className="category-count">6 Items</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </section>
         </>

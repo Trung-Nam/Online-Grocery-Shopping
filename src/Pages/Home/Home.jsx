@@ -342,7 +342,30 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    
+                    <div className="widget-container">
+                        <div className="widget-body">
+                            <div className="widget widget_klb_customer">
+                                <h4 className="widget-title">Customer Comment</h4>
+                                <div className="widget-body">
+                                    <div className="customer-comment">
+                                        <h4 className="entry-title">The Best Marketplace</h4>
+                                        <div className="entry-message">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                                        </div>
+                                        <div className="customer">
+                                            <div className="avatar">
+                                                <img decoding="async" className='w-100' src={require('../../assets/images/avatar.jpg')} alt="testimonial" />
+                                            </div>
+                                            <div className="detail">
+                                                <h3 className="customer-name">Tina Mcdonnell</h3>
+                                                <span className="customer-mission">Sales Manager</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-9">
                     <div className="module-header d-flex justify-content-center">

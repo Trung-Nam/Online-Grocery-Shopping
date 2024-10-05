@@ -20,17 +20,17 @@
 
         .icon-boxes-widget {
             width: 88%;
-            border: 1px solid var(--color-border);
-            border-radius: 8px;
-            overflow: hidden;
-
             .item {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: var(--color-text);
                 padding: .825rem;
-                border: 1px solid var(--color-border);
+                border-bottom: 1px solid var(--color-border);
+
+                &:nth-child(3) {
+                    border-bottom:none;
+                }
 
                 .icon {
                     margin-right: .9375rem;
@@ -45,10 +45,10 @@
 
         .trending-products-list {
             width: 88%;
-
+            
             .product-type-simple {
                 position: relative;
-
+                border-bottom: 1px solid var(--color-border);
                 .product-wrapper {
                     display: flex;
                     flex-direction: row;
@@ -89,6 +89,12 @@
                             }
                         }
                     }
+                }
+
+                
+
+                &:last-child {
+                    border-bottom:none;
                 }
             }
         }

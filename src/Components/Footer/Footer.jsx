@@ -5,7 +5,8 @@ import { IoFastFoodOutline } from 'react-icons/io5'
 import { TbTruckDelivery } from 'react-icons/tb'
 import { RiDiscountPercentLine } from 'react-icons/ri'
 import { AiOutlineDollar } from 'react-icons/ai'
-
+import { PiPhoneCallLight } from "react-icons/pi";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
     return (
         <footer className="site-footer">
@@ -287,6 +288,60 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="footer-contacts">
+                <div className="container d-flex">
+                    <div className="col-lg-5 column-left">
+                        <div className="site-phone">
+                            <div className="phone-icon">
+                                <PiPhoneCallLight />
+                            </div>
+                            <div className="phone-detail">
+                                <h4 className="entry-title">8 800 555-55</h4>
+                                <span>Working 8:00 - 22:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-7 column-right">
+                        <div className="site-mobile-app">
+                            <div className="app-content">
+                                <h6 className="entry-title">Download App on Mobile:</h6>
+                                <span>15% discount on your first purchase</span>
+                            </div>
+                            <div className="app-buttons">
+                                <a href="/" className="google-play">
+                                    <img src={require('../../assets/images/google-play.jpg')} alt="app" />
+                                </a>
+                                <a href="/" className="google-play">
+                                    <img src={require('../../assets/images/app-store.jpg')} alt="app" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="site-social">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                        <FaFacebookF />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                        <FaTwitter />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                        <FaInstagram />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </footer>
     )

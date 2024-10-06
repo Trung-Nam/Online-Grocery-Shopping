@@ -82,6 +82,7 @@
 
             .icon-box-detail {
                 margin-top: .25rem;
+
                 span {
                     font-size: .8125rem;
                     font-weight: 500;
@@ -89,4 +90,53 @@
             }
         }
     }
+
+    .footer-widgets {
+        background-color: #f7f8fd;
+
+        .container {
+            padding-top: 6.25rem;
+            padding-bottom: 6.25rem;
+
+            .widget_nav_menu {
+                font-size: .8125rem;
+                margin-bottom: 1.875rem;
+
+                .widget-title {
+                    font-family: var(--font-secondary);
+                    font-size: .9375rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0;
+                    margin-bottom: 1.25rem;
+                }
+
+
+                .menu {
+                    font-weight: 400;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        padding: 4px 0;
+
+                        a {
+                            color: #71778e;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: var(--color-primary);
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
 }

@@ -262,4 +262,44 @@
         }
     }
 
+    .footer-bottom {
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-flow: row wrap;
+            padding-top: 1.875rem;
+            padding-bottom: 1.875rem;
+
+            .site-copyright {
+                font-size: .75rem;
+                color: #9b9bb4;
+                p {
+                    margin: 0;
+                }
+            }
+
+            .site-menu {
+                .menu {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        font-size: .75rem;
+
+                        a {
+                            color: #9b9bb4;
+                            display: inline-flex;
+                            align-items: center;
+                            text-decoration: none;
+                            margin: 0 8px;
+                        } 
+                    }
+                }
+
+            }
+        }
+    }
+
 }

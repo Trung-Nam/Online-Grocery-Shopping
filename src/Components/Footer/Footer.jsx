@@ -342,6 +342,33 @@ const Footer = () => {
                 </div>
             </div>
 
+            <div className="footer-bottom">
+                <div className="container border-top d-flex justify-content-between">
+                    <div className="site-copyright">
+                        <p>Copyright 2024 © Trung Nam. All rights reserved. Powered by me.</p>
+                    </div>
+
+                    <nav className="site-menu footer-menu">
+                        <ul id="menu-footer-menu" className="menu d-flex justify-content-between">
+                            <li className="menu-item">
+                                <a rel="privacy-policy" href="/">Privacy Policy</a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="/">Terms and Conditions</a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="/">Cookie</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div className="site-payments">
+                        <a href="/">
+                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/payments.jpg" alt="payment" />
+                        </a>
+                    </div>
+                </div>
+            </div>
 
         </footer>
     )

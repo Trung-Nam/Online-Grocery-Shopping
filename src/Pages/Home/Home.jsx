@@ -8,6 +8,7 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { RiMobileDownloadLine } from 'react-icons/ri'
 import { LuClock3 } from 'react-icons/lu'
 import Product from '../../Components/Product/Product'
+import Footer from '../../Components/Footer/Footer'
 const Home = () => {
 
     const CustomPrevArrow = (props) => {
@@ -956,6 +957,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            <Footer/>
         </>
     )
 }

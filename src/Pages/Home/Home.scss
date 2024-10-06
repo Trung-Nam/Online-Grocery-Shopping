@@ -709,6 +709,8 @@
     margin-bottom: 1.875rem;
 
     .categories {
+        cursor: pointer;
+
         .first {
             display: flex;
             align-items: center;
@@ -794,3 +796,4 @@
         }
     }
 }
+

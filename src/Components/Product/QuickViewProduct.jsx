@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './QuickViewProduct.scss';
 import { Rating } from '@mui/material';
 import Slider from 'react-slick/lib/slider';
-import { FaCheck, FaRegHeart } from 'react-icons/fa6';
+import { FaCheck, FaRegHeart, FaXmark } from 'react-icons/fa6';
 import { CgArrowsExchangeV } from "react-icons/cg";
 const QuickViewProduct = () => {
     const [nav1, setNav1] = useState(null);
@@ -40,6 +40,13 @@ const QuickViewProduct = () => {
         >
             <div className="modal-dialog modal-dialog-centered modal-xl">
                 <div className="modal-content quick-modal-content">
+                    {/* Close Button */}
+                    <button
+                        type="button"
+                        className="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    />
                     <div className="quick-product-wrapper">
                         <article className="product">
                             <div className="product-header">

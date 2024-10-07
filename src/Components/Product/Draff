@@ -1,0 +1,163 @@
+import React from 'react';
+
+const ProductDetails = () => {
+return (
+<div className="quick-product-wrapper">
+    <article className="product">
+        <div className="product-header bordered">
+            <h1 className="product_title entry-title">All Natural Italian-Style Chicken Meatballs</h1>
+            <div className="product-meta top">
+                <div className="product-brand">
+                    <table className="woocommerce-product-attributes shop_attributes" aria-label="Product Details">
+                        <tbody>
+                            <tr
+                                className="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_brands">
+                                <th className="woocommerce-product-attributes-item__label" scope="row">Brands</th>
+                                <td className="woocommerce-product-attributes-item__value">
+                                    <p>Welch's</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className="product-rating">
+                    <div className="woocommerce-product-rating product-rating">
+                        <div className="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                            <span style={{ width: '80%' }}>
+                                Rated <strong className="rating">4.00</strong> out of 5 based on{' '}
+                                <span className="rating">1</span> customer rating
+                            </span>
+                        </div>
+                        <div className="count-rating">
+                            <a href="#reviews" className="woocommerce-review-link" rel="nofollow">
+                                <span className="count">1</span> review
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="sku-wrapper">
+                    <span>SKU: </span>
+                    <span className="sku">ZU49VOR</span>
+                </div>
+            </div>
+        </div>
+
+        <div className="product-wrapper">
+            <div className="product-thumbnails">
+                <div className="woocommerce-product-gallery">
+                    <div className="product-badges">
+                        <span className="badge style-1 onsale">23%</span>
+                        <span className="badge style-1" style={{ backgroundColor: '#71778e' }}>recommended</span>
+                    </div>
+
+                    <div className="slider-wrapper slider-loaded">
+                        <figure id="images" className="woocommerce-product-gallery__wrapper site-slider">
+                            {/* Slick Slider Images */}
+                            <a href="#0" className="slick-slide">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62.jpg"
+                                    alt="bacola" />
+                            </a>
+                            <a href="#0" className="slick-slide">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image2-47.jpg"
+                                    alt="bacola" />
+                            </a>
+                            <a href="#0" className="slick-slide">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image3-35.jpg"
+                                    alt="bacola" />
+                            </a>
+                        </figure>
+
+                        <div id="thumbnails" className="product-thumbnails site-slider">
+                            {/* Slick Slider Thumbnails */}
+                            <div className="product-thumbnail">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62.jpg"
+                                    alt="bacola" />
+                            </div>
+                            <div className="product-thumbnail">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image2-47.jpg"
+                                    alt="bacola" />
+                            </div>
+                            <div className="product-thumbnail">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image3-35.jpg"
+                                    alt="bacola" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="product-detail">
+                <p className="price">
+                    <del>
+                        <span className="woocommerce-Price-amount amount">
+                            <span className="woocommerce-Price-currencySymbol">$</span>9.35
+                        </span>
+                    </del>
+                    <ins>
+                        <span className="woocommerce-Price-amount amount">
+                            <span className="woocommerce-Price-currencySymbol">$</span>7.25
+                        </span>
+                    </ins>
+                </p>
+
+                <div className="product-meta">
+                    <div className="stock product-available in-stock">
+                        <span className="stock in-stock">In Stock</span>
+                    </div>
+                </div>
+
+                <div className="product-short-description">
+                    <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt.</p>
+                </div>
+
+                <form className="cart single-ajax"
+                    action="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/"
+                    method="post" enctype="multipart/form-data">
+                    <div className="quantity">
+                        <label className="screen-reader-text" htmlFor="quantity_6702a82b656cb">Quantity</label>
+                        <div className="quantity-button minus"><i className="klbth-icon-minus"></i></div>
+                        <input type="text" id="quantity_6702a82b656cb" className="input-text qty text" name="quantity"
+                            defaultValue="1" size="4" min="1" max="3" step="1" inputMode="numeric" autoComplete="off" />
+                        <div className="quantity-button plus"><i className="klbth-icon-plus"></i></div>
+                    </div>
+
+                    <button type="submit" name="add-to-cart" value="430"
+                        className="single_add_to_cart_button button alt">
+                        Add to cart
+                    </button>
+                </form>
+
+                <div className="product-actions">
+                    <button className="woosc-btn" data-id="430">
+                        Compare
+                    </button>
+                    <a href="/" className="tinvwl_add_to_wishlist_button" aria-label="Add to Wishlist">
+                        Add to Wishlist
+                    </a>
+                </div>
+
+                <div className="product-checklist">
+                    <ul>
+                        <li>Type: Organic</li>
+                        <li>MFG: Jun 4.2021</li>
+                        <li>LIFE: 30 days</li>
+                    </ul>
+                </div>
+
+                <div className="product-meta bottom">
+                    <span className="sku_wrapper">SKU: <span className="sku">ZU49VOR</span></span>
+                    <span className="posted_in">Category: <a href="/">Meats &amp; Seafood</a></span>
+                    <span className="tagged_as">
+                        Tags: <a href="/">chicken</a>, <a href="/">natural</a>, <a href="/">organic</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+);
+};
+
+export default ProductDetails;

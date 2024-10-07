@@ -9,6 +9,7 @@ import { RiMobileDownloadLine } from 'react-icons/ri'
 import { LuClock3 } from 'react-icons/lu'
 import Product from '../../Components/Product/Product'
 import Footer from '../../Components/Footer/Footer'
+import QuickViewProduct from '../../Components/Product/QuickViewProduct'
 const Home = () => {
 
     const CustomPrevArrow = (props) => {
@@ -397,7 +398,12 @@ const Home = () => {
                                         />
                                     </a>
                                     <div className="product-buttons">
-                                        <a href="/" className="detail-btn quick-view-button shadow">
+                                        <a
+                                            href="/"
+                                            className="detail-btn quick-view-button shadow"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#quick-view-product"
+                                        >
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z" />
                                             </svg>
@@ -632,6 +638,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </Slider>
+                        <QuickViewProduct/>
                     </div>
 
                     <div className="module-body-banner w-100">
@@ -958,7 +965,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <Footer/>
+            <Footer />
         </>
     )
 }

@@ -38,14 +38,14 @@ const QuickViewProduct = () => {
             aria-labelledby="productModalLabel"
             aria-hidden="true"
         >
-            <div className="modal-dialog modal-dialog-centered modal-lg">
+            <div className="modal-dialog modal-dialog-centered modal-xl">
                 <div className="modal-content quick-modal-content">
                     <div className="quick-product-wrapper">
                         <article className="product">
-                            <div className="product-header bordered">
+                            <div className="product-header">
                                 <h1 className="product_title entry-title">All Natural Italian-Style Chicken Meatballs</h1>
                                 <div className="product-meta">
-                                    <div className="product-brand col-3">
+                                    <div className="product-brand">
                                         <table className="product-attributes shop_attributes" aria-label="Product Details">
                                             <tbody>
                                                 <tr className="product-attributes-item">
@@ -58,7 +58,7 @@ const QuickViewProduct = () => {
                                         </table>
                                     </div>
 
-                                    <div className="product-rating col-4">
+                                    <div className="product-rating">
                                         <div className="product-rating">
                                             <Rating name="read-only" value={4} readOnly className='star-rating' />
                                             <div className="count-rating">
@@ -69,15 +69,20 @@ const QuickViewProduct = () => {
                                         </div>
                                     </div>
 
-                                    <div className="sku-wrapper col-5">
+                                    <div className="sku-wrapper">
                                         <span>SKU: </span>
                                         <span className="sku">ZU49VOR</span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="quick-product-wrapper d-flex justify-content-between">
+                            <div className="quick-product-wrapper d-flex">
                                 <div className="product-thumbnails col-6">
+                                    <div className="product-badges">
+                                        <span className="badge onsale">23%</span>
+                                        <span className="badge">recommended</span>
+                                    </div>
+
                                     {/* Main Slider */}
                                     <Slider {...mainSliderSettings} className="main-slider">
                                         {images.map((image, index) => (
@@ -98,6 +103,7 @@ const QuickViewProduct = () => {
                                 </div>
 
                                 <div className="product-detail col-6">
+
                                     <p className="price">
                                         <del>
                                             <span className="price-amount amount">

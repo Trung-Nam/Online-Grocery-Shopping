@@ -32,6 +32,72 @@
                         }
                     }
                 }
+
+                .products-header {
+                    margin-top: .9375rem;
+                    margin-bottom: 2.1875rem;
+                }
+
+                .product__categories {
+                    .product__categories-title {
+                        font-family: var(--font-secondary);
+                        font-size: .9375rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 0;
+                        margin-bottom: 1.25rem;
+                    }
+
+                    .site-scroll {
+                        max-height: 16.75rem;
+
+                        .category__lists {
+                            font-size: .875rem;
+                            font-weight: 400;
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+
+                            .category__lists-item {
+                                position: relative;
+                                display: flex;
+                                align-items: flex-start;
+                                flex-flow: row wrap;
+                                overflow: hidden;
+                                margin-right: 15px;
+                                justify-content: flex-start;
+                                align-items: center;
+
+                                a {
+                                    margin-bottom: .625rem;
+                                    text-decoration: none;
+                                    color: var(--color-text-lighter);
+                                    margin-bottom: .625rem;
+                                    display: inline-block;
+
+                                    input {
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+
+                                    span {
+                                        margin-left: .6375rem;
+                                    }
+
+                                    svg {
+                                        position: absolute;
+                                        top: 4px;
+                                        right: 0;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin-right: .2em;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

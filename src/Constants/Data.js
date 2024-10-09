@@ -1,4 +1,4 @@
-const categoriesDropdown = [
+const categories = [
     {
         title: 'Fruits & Vegetables',
         icon: require('../assets/images/vegetable.png'),
@@ -67,4 +67,4 @@ const categoriesDropdown = [
     },
 ];
 
-export default categoriesDropdown 
+export default categories

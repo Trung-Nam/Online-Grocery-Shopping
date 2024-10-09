@@ -4,7 +4,7 @@ import { FaAngleDown } from 'react-icons/fa6';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown/Dropdown';
-import  categoriesDropdown  from '../../Constants/Data'
+import  categories  from '../../Constants/Data'
 
 const Navigation = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -30,7 +30,7 @@ const Navigation = () => {
                                 </span>
                             </Button>
                             {isDropdownOpen && (
-                                <Dropdown items={categoriesDropdown}/>
+                                <Dropdown items={categories}/>
                             )}
                         </div>
                         <div className="all-categories-description">TOTAL 63 PRODUCTS</div>

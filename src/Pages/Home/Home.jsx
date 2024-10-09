@@ -8,7 +8,6 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { RiMobileDownloadLine } from 'react-icons/ri'
 import { LuClock3 } from 'react-icons/lu'
 import Product from '../../Components/Product/Product'
-import Footer from '../../Components/Footer/Footer'
 import QuickViewProduct from '../../Components/Product/QuickViewProduct'
 const Home = () => {
 
@@ -965,7 +964,6 @@ const Home = () => {
                 </div>
             </section>
 
-            <Footer />
         </>
     )
 }

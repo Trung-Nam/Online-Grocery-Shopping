@@ -43,7 +43,7 @@ const Navigation = () => {
                                 <Link to='/'>Home</Link>
                             </li>
                             <li className='list-group-item'>
-                                <Link to='/'>Shop</Link>
+                                <Link to='/shop'>Shop</Link>
                             </li>
                             <li className='list-group-item'>
                                 <Link to='/'>Meats & Seafood</Link>

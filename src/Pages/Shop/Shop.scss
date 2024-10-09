@@ -1,0 +1,38 @@
+.site-primary {
+    .site-content {
+        .homepage-content {
+            .container {
+                .breadcrumb {
+                    padding: .625rem 0;
+
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        flex-flow: row wrap;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+
+                        li {
+                            position: relative;
+                            display: inline-flex;
+                            align-items: center;
+                            font-family: var(--font-secondary);
+                            font-size: .75rem;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            letter-spacing: 0;
+                            color: var(--color-info-dark);
+
+                            a {
+                                color: var(--color-text-light);
+                                text-decoration: none;
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

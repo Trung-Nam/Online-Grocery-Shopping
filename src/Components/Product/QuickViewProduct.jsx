@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './QuickViewProduct.scss';
 import { Rating } from '@mui/material';
 import Slider from 'react-slick/lib/slider';
-import { FaCheck, FaRegHeart, FaXmark } from 'react-icons/fa6';
+import { FaCheck, FaRegHeart } from 'react-icons/fa6';
 import { CgArrowsExchangeV } from "react-icons/cg";
 const QuickViewProduct = () => {
     const [nav1, setNav1] = useState(null);

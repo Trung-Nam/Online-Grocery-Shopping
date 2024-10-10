@@ -84,14 +84,22 @@
                                         margin-left: .6375rem;
                                     }
 
-                                    svg {
-                                        position: absolute;
-                                        top: 4px;
-                                        right: 0;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        margin-right: .2em;
-                                        cursor: pointer;
+
+                                }
+
+                                svg {
+                                    position: absolute;
+                                    top: 4px;
+                                    right: 0;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-right: .2em;
+                                    cursor: pointer;
+                                }
+
+                                .submenu{
+                                    .submenu-item{
+                                        list-style: none;
                                     }
                                 }
                             }

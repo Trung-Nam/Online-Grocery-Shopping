@@ -6,7 +6,7 @@ import './Shop.scss'
 import { FaPlus } from 'react-icons/fa6';
 
 const Shop = () => {
-    const [activeSubmenu, setActiveSubmenu] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(null);
     return (
         <main id="main" className="site-primary">
             <div className="site-content">
@@ -32,24 +32,58 @@ const Shop = () => {
 
                                             <div className="site-checkbox-lists">
                                                 <div className="site-scroll ps">
+
                                                     <ul className="category__lists">
                                                         {categories?.map((item, index) => (
-                                                            <li
-                                                                className="category__lists-item"
-                                                                key={index}
-                                                            >
-                                                                <a className="d-flex align-items-center" href={item.link}>
-                                                                    <input name="product_cat[]" value="" id="" type="checkbox" />
-                                                                    <span>
+                                                            <li className="category__lists-item" key={index}>
+                                                                <a className="d-flex align-items-center" href="/">
+                                                                    <input
+                                                                        name="product_cat[]"
+                                                                        value={item.value}
+                                                                        id={`checkbox-${index}`}
+                                                                        type="checkbox"
+                                                                    />
+                                                                    <span
+                                                                        onClick={() => {
+                                                                            const checkbox = document.getElementById(`checkbox-${index}`);
+                                                                            checkbox.checked = !checkbox.checked;
+                                                                        }}
+                                                                    >
                                                                         {item.title}
                                                                     </span>
-                                                                    {item.submenu.length !== 0 && <FaPlus
-                                                                        onClick={() => setActiveSubmenu(item.submenu)}
-                                                                    />}
                                                                 </a>
+                                                                {item.submenu.length !== 0 && (
+                                                                    <FaPlus onClick={() => setActiveIndex(activeIndex === index ? null : index)} /> // Toggle submenu for clicked item
+                                                                )}
+                                                                {activeIndex === index && (
+                                                                    <ul className="submenu">
+                                                                        {item.submenu.map((subItem, subIndex) => (
+                                                                            <li key={subIndex} className='submenu-item'>
+                                                                                <a className="dropdown-item d-flex align-items-center" href={subItem.link}>
+                                                                                    <input
+                                                                                        name={`sub_product_cat[]`}
+                                                                                        value={subItem.value}
+                                                                                        id={`sub-checkbox-${index}-${subIndex}`}
+                                                                                        type="checkbox"
+                                                                                    />
+                                                                                    <span
+                                                                                        onClick={() => {
+                                                                                            const checkbox = document.getElementById(`sub-checkbox-${index}-${subIndex}`);
+                                                                                            checkbox.checked = !checkbox.checked;
+                                                                                        }}
+                                                                                    >
+                                                                                        {subItem.title}
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        ))}
+                                                                    </ul>
+                                                                )}
                                                             </li>
                                                         ))}
                                                     </ul>
+
+
                                                 </div>
                                             </div>
                                         </div>

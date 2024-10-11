@@ -211,6 +211,48 @@
                         }
                     }
                 }
+
+                .product__brands {
+                    margin-top: 3.125rem;
+
+                    .product__brands-titles {
+                        font-family: var(--font-secondary);
+                        font-size: .9375rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 0;
+                        margin-bottom: 1.25rem;
+                    }
+
+                    .layered-nav-list {
+                        list-style: none;
+                        padding: 0;
+                        font-size: .875rem;
+                        font-weight: 400;
+
+                        .layered-nav-list__item {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            flex-flow: row wrap;
+                            overflow: hidden;
+                            margin-bottom: .625rem;
+
+                            input {
+                                width: 14px;
+                                height: 14px;
+                            }
+
+                            a {
+                                flex: 1;
+                                text-decoration: none;
+                                color: var(--color-text-lighter);
+                                display: inline-block;
+                                margin-left: 0.6375rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

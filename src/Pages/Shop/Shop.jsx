@@ -129,6 +129,50 @@ const Shop = () => {
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div className="product__brands">
+                                            <h4 class="product__brands-title">Brands</h4>
+                                            <ul className="layered-nav-list">
+                                                <li className="layered-nav-list__item">
+                                                    <input type="checkbox" />
+                                                    <a rel="nofollow" href="/">
+                                                        Frito Lay
+                                                    </a>
+                                                    <span className="count">(10)</span>
+                                                </li>
+                                                <li className="layered-nav-list__item">
+
+                                                    <input type="checkbox" />
+                                                    <a rel="nofollow" href="/">
+                                                        Nespresso
+                                                    </a>
+                                                    <span className="count">(11)</span>
+                                                </li>
+                                                <li className="layered-nav-list__item">
+
+                                                    <input type="checkbox" />
+                                                    <a rel="nofollow" href="/">
+                                                        Oreo
+                                                    </a>
+                                                    <span className="count">(9)</span>
+                                                </li>
+                                                <li className="layered-nav-list__item">
+                                                    <input type="checkbox" />
+                                                    <a rel="nofollow" href="/">
+                                                        Quaker
+                                                    </a>
+                                                    <span className="count">(10)</span>
+                                                </li>
+                                                <li className="layered-nav-list__item">
+                                                    <input type="checkbox" />
+                                                    <a rel="nofollow" href="/">
+                                                        Welch's
+                                                    </a>
+                                                    <span className="count">(10)</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>

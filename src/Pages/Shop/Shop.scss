@@ -215,7 +215,7 @@
                 .product__brands {
                     margin-top: 3.125rem;
 
-                    .product__brands-titles {
+                    .product__brands-title {
                         font-family: var(--font-secondary);
                         font-size: .9375rem;
                         font-weight: 600;
@@ -252,6 +252,10 @@
                             }
                         }
                     }
+                }
+
+                .media__image {
+                    margin-top: 3.125rem;
                 }
             }
         }

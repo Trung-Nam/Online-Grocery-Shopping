@@ -173,6 +173,19 @@ const Shop = () => {
                                             </ul>
 
                                         </div>
+
+                                        <div className="media__image">
+                                            <img
+                                                width="1280"
+                                                height="1750"
+                                                src={require("../../assets/images/sidebar-banner.gif")}
+                                                className="image wp-image-1184 attachment-full size-full"
+                                                alt=""
+                                                style={{ maxWidth: '100%', height: 'auto' }}
+                                                decoding="async"
+                                            />
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>

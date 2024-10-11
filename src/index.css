@@ -34,6 +34,8 @@
   --color-placeholder: #9595a9;
   --color-black: #000;
   --color-white: #fff;
+
+  --size-border-radius: 8px;
 }
 
 * {

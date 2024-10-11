@@ -191,7 +191,33 @@ const Shop = () => {
                             </div>
 
                             <div className="col-12 col-md-12 col-lg-9 content-primary">
-                                right
+                                
+                                <div className="shop-banner">
+                                    <div className="module-banner image align-center align-middle">
+                                        <div className="module-body">
+                                            <div className="banner-wrapper">
+                                                <div className="banner-content">
+                                                    <div className="content-main">
+                                                        <h4 className="entry-subtitle color-text xlight">Organic Meals Prepared</h4>
+                                                        <h3 className="entry-title color-text large">
+                                                            Delivered to <strong className="color-success">your Home</strong>
+                                                        </h3>
+                                                        <div className="entry-text color-info-dark">
+                                                            Fully prepared &amp; delivered nationwide.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="banner-thumbnail">
+                                                    <img
+                                                        src="https://klbtheme.com/bacola/wp-content/uploads/2021/08/bacola-banner-18.jpg"
+                                                        alt="Organic Meals Prepared"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

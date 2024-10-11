@@ -307,6 +307,113 @@
                                 }
                             }
                         }
+
+                        .filter__options {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-left: 1.875rem;
+                            padding-right: 1.875rem;
+                            margin-bottom: 1.25rem;
+                            min-height: 3.5rem;
+                            background-color: var(--color-light);
+                            border-radius: var(--size-border-radius);
+
+                            .shop-view-selector {
+                                display: flex;
+                                justify-content: flex-start;
+
+                                button {
+
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 1.5rem;
+                                    color: var(--color-info);
+                                    background: none;
+                                    outline: none;
+
+                                    &:hover svg {
+                                        color: var(--color-text);
+                                    }
+                                }
+
+                                button.active {
+                                    color: var(--color-text);
+                                }
+                            }
+
+                            .shop-view-filters {
+                                display: flex;
+
+                                .dropdown-toggle::after {
+                                    display: inline-block;
+                                    margin-left: 0.5em;
+                                    vertical-align: .255em;
+                                    content: "";
+                                    border-top: .3em solid;
+                                    border-right: .3em solid transparent;
+                                    border-bottom: 0;
+                                    border-left: .3em solid transparent;
+                                }
+
+                                button {
+                                    font-weight: 600;
+                                    font-size: .8125rem;
+                                    color: var(--color-text);
+                                    padding-left: 1rem;
+                                    border: none;
+                                    background: none;
+                                    outline: none;
+                                    border-left: 1px solid var(--color-border);
+                                    border-right: 1px solid var(--color-border);
+
+                                    span {
+                                        margin-right: 4px; 
+                                    }
+                                }
+
+                                ul {
+
+                                    li {
+                                        a {
+                                            font-weight: 600;
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: flex-start;
+                                            align-items: center;
+                                            padding: .5rem 0;
+                                            font-size: .8125rem;
+                                            color: var(--color-text-light);
+
+                                            &:hover {
+                                                color: var(--color-primary);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                ul.dropdown-menu-sort {
+                                    li {
+                                        a {
+                                            padding-left: 2.125rem;
+                                            padding-right: 3.225rem;
+                                        }
+                                    }
+                                }
+
+                                ul.dropdown-menu-items {
+                                    li {
+                                        a {
+                                            justify-content: center;
+                                            align-items: center;
+                                            padding-left: 1.25rem;
+                                            padding-right: 1.25rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -6,10 +6,16 @@ import './Shop.scss'
 import { FaPlus } from 'react-icons/fa6';
 import RangeSlider from 'react-range-slider-input';
 import 'react-range-slider-input/dist/style.css';
-
+import { Button } from '@mui/material';
+import { IoGrid, IoMenu } from "react-icons/io5";
+import { BsFillGrid3X3GapFill } from "react-icons/bs";
+import { TfiLayoutGrid4Alt } from "react-icons/tfi";
 const Shop = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const [value, setValue] = useState([0, 100]);
+    const [numberOfItems, setNumberOfItems] = useState(9);
+    const [sortBy, setSortBy] = useState("Sort by lasted")
+
     return (
         <main id="main" className="site-primary">
             <div className="site-content">
@@ -191,7 +197,7 @@ const Shop = () => {
                             </div>
 
                             <div className="col-12 col-md-12 col-lg-9 content-primary">
-                                
+
                                 <div className="shop-banner">
                                     <div className="module-banner image align-center align-middle">
                                         <div className="module-body">
@@ -216,6 +222,152 @@ const Shop = () => {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+
+                                <div className="filter__options">
+                                    <div className="shop-view-selector">
+                                        <Button className='active'>
+                                            <IoMenu size={34} />
+                                        </Button>
+
+                                        <Button>
+                                            <IoGrid />
+                                        </Button>
+                                        <Button>
+                                            <BsFillGrid3X3GapFill />
+                                        </Button>
+                                        <Button>
+                                            <TfiLayoutGrid4Alt />
+                                        </Button>
+                                    </div>
+
+                                    <div className="shop-view-filters">
+                                        <div className="dropdown">
+                                            <button
+                                                className="btn btn-secondary dropdown-toggle"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                {sortBy}
+                                            </button>
+                                            <ul className="dropdown-menu dropdown-menu-sort">
+                                                <li>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="/"
+                                                        onClick={() => {
+                                                            setSortBy("Sort by lasted")
+                                                        }}
+                                                    >
+                                                        Sort by lasted
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="/"
+                                                        onClick={() => {
+                                                            setSortBy("Sort by popularity")
+                                                        }}
+                                                    >
+                                                        Sort by popularity
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="/"
+                                                        onClick={() => {
+                                                            setSortBy("Sort by average rating")
+                                                        }}
+                                                    >
+                                                        Sort by average rating
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="/"
+                                                        onClick={() => {
+                                                            setSortBy("Sort by price: low to high")
+                                                        }}
+                                                    >
+                                                        Sort by price: low to high
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="/"
+                                                        onClick={() => {
+                                                            setSortBy("Sort by price: high to low")
+                                                        }}
+                                                    >
+                                                        Sort by price: high to low
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div className="dropdown">
+                                            <button
+                                                className="btn dropdown-toggle"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                <span>Number items: </span> {numberOfItems}
+                                            </button>
+                                            <ul className="dropdown-menu dropdown-menu-items">
+                                                <li>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="/"
+                                                        onClick={() => {
+                                                            setNumberOfItems(9);
+                                                        }}
+                                                    >
+                                                        9
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="/"
+                                                        onClick={() => {
+                                                            setNumberOfItems(18);
+                                                        }}
+                                                    >
+                                                        18
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="/"
+                                                        onClick={() => {
+                                                            setNumberOfItems(27);
+                                                        }}
+                                                    >
+                                                        27
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        className="dropdown-item"
+                                                        href="/"
+                                                        onClick={() => {
+                                                            setNumberOfItems(36);
+                                                        }}
+                                                    >
+                                                        36
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                             </div>

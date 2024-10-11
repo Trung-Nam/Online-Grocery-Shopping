@@ -135,6 +135,7 @@
                         align-items: center;
                         justify-content: space-between;
                         margin-top: 1.5625rem;
+
                         .price_label {
                             font-size: .85rem;
 
@@ -153,6 +154,60 @@
                             padding: 0;
                             border: 0;
                             background-color: transparent;
+                        }
+                    }
+                }
+
+                .product__status {
+                    margin-top: 3.125rem;
+
+                    .product__status-title {
+                        font-family: var(--font-secondary);
+                        font-size: .9375rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 0;
+                        margin-bottom: 1.25rem;
+                    }
+
+                    .site-checkbox-lists {
+                        .site-scroll {
+                            max-height: 16.75rem;
+                            overflow: auto;
+
+                            ul {
+                                font-size: .875rem;
+                                font-weight: 400;
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
+
+                                li {
+                                    position: relative;
+                                    display: flex;
+                                    align-items: flex-start;
+                                    flex-flow: row wrap;
+                                    overflow: hidden;
+                                    margin-right: 15px;
+
+                                    input {
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+
+                                    a {
+                                        flex: 1;
+                                        text-decoration: none;
+                                        color: var(--color-text-lighter);
+                                        margin-bottom: .625rem;
+                                        display: inline-block;
+
+                                        span {
+                                            margin-left: 0.6375rem;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }

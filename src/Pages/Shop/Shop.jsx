@@ -92,15 +92,41 @@ const Shop = () => {
 
                                         <div className="product__price-filter">
                                             <h4 className="product__price-filter-title">Filter by price</h4>
-                                            <RangeSlider 
-                                                value={value} 
-                                                onInput={setValue} 
+                                            <RangeSlider
+                                                value={value}
+                                                onInput={setValue}
                                             />
                                             <div className="price_slider-amount">
                                                 <div className="price_label">
                                                     Price: <span className="from">$0</span> — <span className="to">$70</span>
                                                 </div>
-                                                    <button type='submit' className="btn custom-btn">Filter</button>
+                                                <button type='submit' className="btn custom-btn">Filter</button>
+                                            </div>
+                                        </div>
+
+                                        <div className="product__status">
+                                            <h4 className="product__status-title">Product Status</h4>
+                                            <div className="site-checkbox-lists">
+                                                <div className="site-scroll ps">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="/">
+                                                                <input name="stockonsale" value="instock" id="instock" type="checkbox" />
+                                                                <label>
+                                                                    <span>In Stock</span>
+                                                                </label>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/">
+                                                                <input name="stockonsale" value="onsale" id="onsale" type="checkbox" />
+                                                                <label>
+                                                                    <span>On Sale</span>
+                                                                </label>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

@@ -4,9 +4,12 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import categories from '../../Constants/Data'
 import './Shop.scss'
 import { FaPlus } from 'react-icons/fa6';
+import RangeSlider from 'react-range-slider-input';
+import 'react-range-slider-input/dist/style.css';
 
 const Shop = () => {
     const [activeIndex, setActiveIndex] = useState(null);
+    const [value, setValue] = useState([0, 100]);
     return (
         <main id="main" className="site-primary">
             <div className="site-content">
@@ -32,7 +35,6 @@ const Shop = () => {
 
                                             <div className="site-checkbox-lists">
                                                 <div className="site-scroll ps">
-
                                                     <ul className="category__lists">
                                                         {categories?.map((item, index) => (
                                                             <li className="category__lists-item" key={index}>
@@ -85,6 +87,20 @@ const Shop = () => {
 
 
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="product__price-filter">
+                                            <h4 className="product__price-filter-title">Filter by price</h4>
+                                            <RangeSlider 
+                                                value={value} 
+                                                onInput={setValue} 
+                                            />
+                                            <div className="price_slider-amount">
+                                                <div className="price_label">
+                                                    Price: <span className="from">$0</span> — <span className="to">$70</span>
+                                                </div>
+                                                    <button type='submit' className="btn custom-btn">Filter</button>
                                             </div>
                                         </div>
                                     </div>

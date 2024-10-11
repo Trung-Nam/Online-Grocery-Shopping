@@ -50,6 +50,7 @@
 
                     .site-scroll {
                         max-height: 16.75rem;
+                        overflow-y: auto;
 
                         .category__lists {
                             font-size: .875rem;
@@ -97,12 +98,61 @@
                                     cursor: pointer;
                                 }
 
-                                .submenu{
-                                    .submenu-item{
+                                .submenu {
+                                    .submenu-item {
                                         list-style: none;
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+
+                .product__price-filter {
+                    margin-top: 3.125rem;
+
+                    .product__price-filter-title {
+                        font-family: var(--font-secondary);
+                        font-size: .9375rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 0;
+                        margin-bottom: 1.25rem;
+                    }
+
+                    .range-slider {
+                        width: 100%;
+                        height: 5px;
+
+                        .range-slider__thumb {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+
+                    .price_slider-amount {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 1.5625rem;
+                        .price_label {
+                            font-size: .85rem;
+
+                            span {
+                                font-weight: 600;
+                                color: var(--color-text);
+                            }
+                        }
+
+                        .custom-btn {
+                            font-size: .85rem;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            height: auto;
+                            margin-left: auto;
+                            padding: 0;
+                            border: 0;
+                            background-color: transparent;
                         }
                     }
                 }

@@ -210,6 +210,74 @@ const ProductDetails = () => {
                                             <a href="/" rel="tag">organic</a>
                                         </span>
                                     </div>
+
+                                    <div className="product-share">
+                                        <div className="social-share site-social style-1">
+                                            <ul className="social-container">
+                                                <li>
+                                                    <a
+                                                        href="/"
+                                                        className="facebook"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        <img src={require("../../assets/images/social media/facebook.png")} alt="facebook-icon" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/"
+                                                        className="twitter"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        <img src={require("../../assets/images/social media/twitter.png")} alt="twitter-icon" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/"
+                                                        className="pinterest"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        <img src={require("../../assets/images/social media/pinterest.png")} alt="pinterest-icon" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/"
+                                                        className="linkedin"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        <img src={require("../../assets/images/social media/linkedin.png")} alt="linkedin-icon" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/"
+                                                        className="reddit"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        <img src={require("../../assets/images/social media/reddit.png")} alt="reddit-icon" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="/"
+                                                        className="whatsapp"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        <img src={require("../../assets/images/social media/whatsapp.png")} alt="whatsapp-icon" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                                 <div className="product-icons col-5">

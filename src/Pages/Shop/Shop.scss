@@ -363,13 +363,12 @@
                                     color: var(--color-text);
                                     padding-left: 1rem;
                                     border: none;
+                                    border-radius: 0;
                                     background: none;
                                     outline: none;
-                                    border-left: 1px solid var(--color-border);
-                                    border-right: 1px solid var(--color-border);
-
+                                    
                                     span {
-                                        margin-right: 4px; 
+                                        margin-right: 4px;
                                     }
                                 }
 

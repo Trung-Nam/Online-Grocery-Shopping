@@ -10,6 +10,7 @@ import { Button } from '@mui/material';
 import { IoGrid, IoMenu } from "react-icons/io5";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { TfiLayoutGrid4Alt } from "react-icons/tfi";
+import Product from '../../Components/Product/Product';
 const Shop = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const [value, setValue] = useState([0, 100]);
@@ -244,7 +245,7 @@ const Shop = () => {
                                     <div className="shop-view-filters">
                                         <div className="dropdown">
                                             <button
-                                                className="btn btn-secondary dropdown-toggle"
+                                                className="btn dropdown-toggle border-start"
                                                 type="button"
                                                 data-bs-toggle="dropdown"
                                                 aria-expanded="false"
@@ -312,7 +313,7 @@ const Shop = () => {
 
                                         <div className="dropdown">
                                             <button
-                                                className="btn dropdown-toggle"
+                                                className="btn dropdown-toggle border-end border-start"
                                                 type="button"
                                                 data-bs-toggle="dropdown"
                                                 aria-expanded="false"
@@ -370,6 +371,22 @@ const Shop = () => {
 
                                 </div>
 
+                                <div className="products d-flex flex-wrap border rounded">
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                </div>
+                                
+                                                        
                             </div>
                         </div>
                     </div>

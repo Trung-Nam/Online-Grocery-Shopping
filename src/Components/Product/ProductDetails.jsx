@@ -8,6 +8,7 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 import { TbTruckDelivery } from "react-icons/tb";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { AiOutlineDollarCircle } from "react-icons/ai";
+import CustomTabs from './Tabs/CustomTabs';
 
 
 const ProductDetails = () => {
@@ -15,10 +16,161 @@ const ProductDetails = () => {
     const [nav2, setNav2] = useState(null);
     const [quantity, setQuantity] = useState(1);
 
+    const [rating, setRating] = useState(0);
+    const [review, setReview] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [saveInfo, setSaveInfo] = useState(false);
+
+    const handleRatingChange = (rate) => {
+        setRating(rate);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle form submission here (e.g., send data to an API)
+        console.log({ rating, review, name, email, saveInfo });
+    };
+
     const images = [
         'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62.jpg',
         'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image2-47.jpg',
         'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image3-35.jpg',
+    ];
+
+    const tabData = [
+        {
+            label: "Description",
+            content: (
+                <div className="tab-content">
+                    <p className="tab-paragraph">Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.</p>
+                    <p className="tab-paragraph">Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus commodo vel.</p>
+                </div>
+            ),
+        },
+        {
+            label: "Additional information",
+            content: (
+                <div className="tab-content">
+                    <table className="table table-bordered">
+                        <tr>
+                            <td className="border text-center p-2">Brands</td>
+                            <td className="border text-center p-2">Welch's</td>
+                        </tr>
+                    </table>
+
+                </div>
+            ),
+        },
+        {
+            label: "Reviews (1)",
+            content: (
+                <div className="tab-content">
+                    <div id="reviews">
+                        <h2 className="reviews-title">
+                            1 review for <span>All Natural Italian-Style Chicken Meatballs</span>
+                        </h2>
+
+                        <ol className="comment-lists">
+                            <li className="comment">
+                                <img alt="" src="https://secure.gravatar.com/avatar/dd28514c9a8cfba334e05f21703be28e?s=60&amp;d=mm&amp;r=g" className="avatar avatar-60 photo" height="60" width="60" decoding="async" />
+                                <div className="comment-text">
+                                    <Rating name="read-only" value={4} readOnly className='star-rating' />
+                                    <p className="meta">
+                                        <strong className="review__author">Admin </strong>
+                                        <span className="review__dash">–</span> <time className="review__published-date">May 1, 2021</time>
+                                        <div className="description">
+                                            <p>Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                        </div>
+                                    </p>
+                                </div>
+                            </li>
+                            <li className="comment">
+                                <img alt="" src="https://secure.gravatar.com/avatar/dd28514c9a8cfba334e05f21703be28e?s=60&amp;d=mm&amp;r=g" className="avatar avatar-60 photo" height="60" width="60" decoding="async" />
+                                <div className="comment-text">
+                                    <Rating name="read-only" value={4} readOnly className='star-rating' />
+                                    <p className="meta">
+                                        <strong className="review__author">Nguyen Van A </strong>
+                                        <span className="review__dash">–</span> <time className="review__published-date">May 1, 2021</time>
+                                        <div className="description">
+                                            <p>Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                        </div>
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ol>
+
+                        <div className="comment-respond mt-5">
+                            <h3 className="comment-reply-title">Add a review</h3>
+                            <p className='comment-notes'>Your email address will not be published. Required fields are marked *</p>
+                            <form onSubmit={handleSubmit}>
+                                <div className="comment-form-rating mb-3">
+                                    <label className="form-label">Your rating *</label>
+                                    <div className="rating-stars">
+                                        {[1, 2, 3, 4, 5].map((star) => (
+                                            <span
+                                                key={star}
+                                                onClick={() => handleRatingChange(star)}
+                                                style={{ cursor: 'pointer', color: rating >= star ? '#f39c12' : '#ddd' }}
+                                            >
+                                                ★
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Your review *</label>
+                                    <textarea
+                                        className="form-control"
+                                        rows="5"
+                                        placeholder="Write your review here..."
+                                        value={review}
+                                        onChange={(e) => setReview(e.target.value)}
+                                        required
+                                    ></textarea>
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Name *</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Your Name"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Email *</label>
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        placeholder="Your Email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-3 form-check">
+                                    <input
+                                        type="checkbox"
+                                        className="form-check-input"
+                                        id="saveInfo"
+                                        checked={saveInfo}
+                                        onChange={() => setSaveInfo(!saveInfo)}
+                                    />
+                                    <label className="form-check-label" htmlFor="saveInfo">
+                                        Save my name, email, and website in this browser for the next time I comment.
+                                    </label>
+                                </div>
+                                <button type="submit" className="btn btn-custom">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            ),
+        },
     ];
 
     const mainSliderSettings = {
@@ -62,6 +214,7 @@ const ProductDetails = () => {
                         <li>Product Details 1</li>
                     </ul>
                 </nav>
+
                 <div className="product__details">
                     <article className="product">
                         <div className="product-header">
@@ -309,6 +462,10 @@ const ProductDetails = () => {
                             </div>
                         </div>
                     </article>
+                </div>
+
+                <div className="tabs__wrapper">
+                    <CustomTabs tabs={tabData} />
                 </div>
             </div>
         </div>

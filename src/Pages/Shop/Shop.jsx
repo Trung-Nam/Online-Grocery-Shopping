@@ -6,7 +6,7 @@ import './Shop.scss'
 import { FaPlus } from 'react-icons/fa6';
 import RangeSlider from 'react-range-slider-input';
 import 'react-range-slider-input/dist/style.css';
-import { Button } from '@mui/material';
+import { Button, Pagination } from '@mui/material';
 import { IoGrid, IoMenu } from "react-icons/io5";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { TfiLayoutGrid4Alt } from "react-icons/tfi";
@@ -385,8 +385,10 @@ const Shop = () => {
                                     <Product />
                                     <Product />
                                 </div>
-                                
-                                                        
+
+                                <div className="pagination d-flex justify-content-center align-items-center">
+                                    <Pagination count={10} color="primary" />
+                                </div>
                             </div>
                         </div>
                     </div>

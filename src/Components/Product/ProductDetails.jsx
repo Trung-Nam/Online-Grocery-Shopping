@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import './ProductDetails.scss';
 import { Rating } from '@mui/material';
 import Slider from 'react-slick/lib/slider';
-import { FaCheck, FaRegHeart } from 'react-icons/fa6';
+import { FaArrowRightLong, FaCheck, FaRegHeart } from 'react-icons/fa6';
 import { CgArrowsExchangeV } from 'react-icons/cg';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import { TbTruckDelivery } from "react-icons/tb";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import CustomTabs from './Tabs/CustomTabs';
+import QuickViewProduct from './QuickViewProduct';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import SliderItem from './SliderItem/SliderItem';
 
 
 const ProductDetails = () => {
@@ -201,6 +204,65 @@ const ProductDetails = () => {
             setQuantity(quantity - 1);
         }
     };
+    const CustomPrevArrow = (props) => {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{
+                    ...style,
+                    width: '40px',
+                    height: '40px',
+                    backgroundColor: 'white',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    boxShadow: '0 0px 5px rgba(0, 0, 0, .2)',
+                    cursor: 'pointer',
+                    zIndex: '1',
+                }}
+                onClick={onClick}
+            >
+                <IoIosArrowBack style={{ fontSize: '24px', color: 'black', marginRight: '4px' }} />
+            </div>
+        );
+    }
+
+    const CustomNextArrow = (props) => {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{
+                    ...style,
+                    width: '40px',
+                    height: '40px',
+                    backgroundColor: 'white',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    boxShadow: '0 0px 5px rgba(0, 0, 0, .2)',
+                    cursor: 'pointer',
+                }}
+                onClick={onClick}
+            >
+                <IoIosArrowForward style={{ fontSize: '24px', color: 'black', marginLeft: '4px' }} />
+            </div>
+        );
+    }
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: <CustomPrevArrow />,
+        nextArrow: <CustomNextArrow />
+    };
+
+
 
     return (
         <div className="product__details-wrapper">
@@ -466,6 +528,36 @@ const ProductDetails = () => {
 
                 <div className="tabs__wrapper">
                     <CustomTabs tabs={tabData} />
+                </div>
+                <div className="related-products-wrapper">
+                    <div className="module-header">
+                        <h4 className="entry-title">Related products</h4>
+                        <div className="entry-description">Products you may also interested.</div>
+                    </div>
+                    <div className="related-products border rounded">
+                        <Slider {...settings}>
+                            <SliderItem />
+                            <SliderItem />
+                            <SliderItem />
+                            <SliderItem />
+                        </Slider>
+                        <QuickViewProduct />
+                    </div>
+                </div>
+                <div className="viewed-products-wrapper">
+                    <div className="module-header">
+                        <h4 className="entry-title">Recently Viewed Products</h4>
+                        <div className="entry-description">Products you interested.</div>
+                    </div>
+                    <div className="related-products border rounded">
+                        <Slider {...settings}>
+                            <SliderItem />
+                            <SliderItem />
+                            <SliderItem />
+                            <SliderItem />
+                        </Slider>
+                        <QuickViewProduct />
+                    </div>
                 </div>
             </div>
         </div>

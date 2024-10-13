@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 import './ProductDetails.scss';
 import { Rating } from '@mui/material';
 import Slider from 'react-slick/lib/slider';
-import { FaArrowRightLong, FaCheck, FaRegHeart } from 'react-icons/fa6';
+import { FaCheck, FaRegHeart } from 'react-icons/fa6';
 import { CgArrowsExchangeV } from 'react-icons/cg';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import { TbTruckDelivery } from "react-icons/tb";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { AiOutlineDollarCircle } from "react-icons/ai";
-import CustomTabs from './Tabs/CustomTabs';
-import QuickViewProduct from './QuickViewProduct';
+import CustomTabs from '../Tabs/CustomTabs';
+import QuickViewProduct from '../QuickViewProduct/QuickViewProduct';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import SliderItem from './SliderItem/SliderItem';
+import SliderItem from '../SliderItem/SliderItem';
 
 
 const ProductDetails = () => {
@@ -436,7 +436,7 @@ const ProductDetails = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <img src={require("../../assets/images/social media/facebook.png")} alt="facebook-icon" />
+                                                        <img src={require("../../../assets/images/social media/facebook.png")} alt="facebook-icon" />
                                                     </a>
                                                 </li>
                                                 <li>
@@ -446,7 +446,7 @@ const ProductDetails = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <img src={require("../../assets/images/social media/twitter.png")} alt="twitter-icon" />
+                                                        <img src={require("../../../assets/images/social media/twitter.png")} alt="twitter-icon" />
                                                     </a>
                                                 </li>
                                                 <li>
@@ -456,7 +456,7 @@ const ProductDetails = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <img src={require("../../assets/images/social media/pinterest.png")} alt="pinterest-icon" />
+                                                        <img src={require("../../../assets/images/social media/pinterest.png")} alt="pinterest-icon" />
                                                     </a>
                                                 </li>
                                                 <li>
@@ -466,7 +466,7 @@ const ProductDetails = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <img src={require("../../assets/images/social media/linkedin.png")} alt="linkedin-icon" />
+                                                        <img src={require("../../../assets/images/social media/linkedin.png")} alt="linkedin-icon" />
                                                     </a>
                                                 </li>
                                                 <li>
@@ -476,7 +476,7 @@ const ProductDetails = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <img src={require("../../assets/images/social media/reddit.png")} alt="reddit-icon" />
+                                                        <img src={require("../../../assets/images/social media/reddit.png")} alt="reddit-icon" />
                                                     </a>
                                                 </li>
                                                 <li>
@@ -486,7 +486,7 @@ const ProductDetails = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <img src={require("../../assets/images/social media/whatsapp.png")} alt="whatsapp-icon" />
+                                                        <img src={require("../../../assets/images/social media/whatsapp.png")} alt="whatsapp-icon" />
                                                     </a>
                                                 </li>
                                             </ul>

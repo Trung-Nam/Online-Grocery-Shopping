@@ -2,14 +2,13 @@ import React from 'react'
 import Carousel from '../../Components/Header/Carousel/Carousel'
 import './Home.scss'
 import Slider from 'react-slick'
-import { FaArrowRightLong, FaListCheck, FaRegHeart } from 'react-icons/fa6'
-import { Rating } from '@mui/material'
+import { FaArrowRightLong, FaListCheck } from 'react-icons/fa6'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { RiMobileDownloadLine } from 'react-icons/ri'
 import { LuClock3 } from 'react-icons/lu'
-import Product from '../../Components/Product/Product'
-import QuickViewProduct from '../../Components/Product/QuickViewProduct'
 import SliderItem from '../../Components/Product/SliderItem/SliderItem'
+import Product from '../../Components/Product/Product/Product'
+import QuickViewProduct from '../../Components/Product/QuickViewProduct/QuickViewProduct'
 const Home = () => {
 
     const CustomPrevArrow = (props) => {

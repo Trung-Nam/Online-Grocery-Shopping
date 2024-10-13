@@ -5,7 +5,8 @@ import Header from './Components/Header/Header';
 import { LocationProvider } from './Context/LocationContext';
 import Shop from './Pages/Shop/Shop';
 import Footer from './Components/Footer/Footer';
-import ProductDetails from './Components/Product/ProductDetails';
+import ProductDetails from './Components/Product/ProductDetails/ProductDetails';
+
 
 function App() {
   return (

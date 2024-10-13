@@ -10,7 +10,8 @@ import { Button, Pagination } from '@mui/material';
 import { IoGrid, IoMenu } from "react-icons/io5";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { TfiLayoutGrid4Alt } from "react-icons/tfi";
-import Product from '../../Components/Product/Product';
+import Product from '../../Components/Product/Product/Product';
+
 const Shop = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const [value, setValue] = useState([0, 100]);

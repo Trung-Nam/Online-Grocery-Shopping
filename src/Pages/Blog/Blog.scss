@@ -103,4 +103,213 @@
             margin: 3.5rem 0;
         }
     }
+
+    .content-secondary {
+        .search_form {
+            width: 100%;
+            position: relative;
+
+            input {
+                display: inline-flex;
+                align-items: center;
+                font-family: var(--font-primary);
+                font-size: .9375rem;
+                width: 100%;
+                height: 2.5rem;
+                padding: 0 2rem 0 .9375rem;
+                box-shadow: none;
+                outline: none;
+                appearance: none;
+                color: var(--color-text);
+                background-color: var(--color-form-background);
+                border: 1px solid transparent;
+                border-radius: var(--size-form-radius);
+                transition: all .2s cubic-bezier(.28, .12, .22, 1);
+            }
+
+            button {
+                position: absolute;
+                right: 10px;
+                top: 15%;
+                background: 0 0;
+                border: none;
+                outline: 0;
+                color: #202435;
+            }
+        }
+
+        .widget+.widget {
+            margin-top: 3.125rem;
+        }
+
+        .widget .widget-title {
+            font-family: var(--font-secondary);
+            font-size: .9375rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            margin-bottom: 1.25rem;
+        }
+
+        .widget .widget-body {
+            position: relative;
+            color: var(--color-text-lighter);
+
+            .widget-posts {
+                padding: 1.25rem;
+                border: 1px solid var(--color-border-light);
+                border-radius: var(--size-border-radius);
+
+                .post+.post {
+                    margin-top: 2.25rem;
+                }
+
+                .post {
+                    display: flex;
+                    align-items: center;
+
+                    .post-thumbnail {
+                        position: relative;
+                        flex: 0 0 3.75rem;
+                        max-width: 3.75rem;
+                        height: 3.75rem;
+                        margin-right: .9375rem;
+                        margin-bottom: 0;
+
+                        a {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            display: block;
+                            border-radius: 50%;
+                            overflow: hidden;
+
+                        }
+
+                        .post-number {
+                            position: absolute;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: .6875rem;
+                            font-weight: 600;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            top: -2px;
+                            right: -2px;
+                            border-radius: 50%;
+                            color: var(--color-white);
+                            background-color: var(--color-secondary);
+                            border: 2px solid var(--color-background);
+                            z-index: 1;
+                        }
+                    }
+
+                    .post-wrapper {
+                        .entry-title {
+                            font-size: .875rem;
+                            font-weight: 500;
+                            margin-bottom: 0;
+                            line-height: 1.4;
+
+                            a {
+                                color: var(--color-text);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .widget_social_list {
+            ul {
+                font-size: .875rem;
+                font-weight: 400;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    width: 100%;
+                    margin-bottom: 4px;
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        padding: 0 .9375rem;
+                        height: 2.625rem;
+                        color: #fff !important;
+                        border-radius: var(--size-form-radius);
+                        text-decoration: none;
+                        align-content: center;
+
+                        svg {
+                            width: 1.875rem;
+                        }
+
+                        span {
+                            font-family: var(--font-secondary);
+                            font-size: .75rem;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            margin-left: .9375rem;
+                        }
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+
+                .facebook {
+
+                    background-color: #3b5998;
+                }
+
+                .twitter {
+                    background-color: #1da1f2;
+                }
+
+                .pinterest {
+                    background-color: #e60023;
+                }
+
+                .linkedin {
+                    background-color: #0077b5;
+                }
+
+                .reddit {
+                    background-color: #ff4500;
+                }
+            }
+        }
+
+        .site-social.wide ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .tagcloud {
+            a {
+                color: var(--color-black);
+                background-color: transparent;
+                border: 1px solid var(--color-border-light);
+                height: 2rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                font-size: .875rem !important;
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 3px;
+                text-decoration: none;
+            }
+        }
+
+    }
 }

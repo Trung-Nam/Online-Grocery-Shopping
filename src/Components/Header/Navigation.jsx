@@ -58,7 +58,7 @@ const Navigation = () => {
                                 <Link to='/blog'>Blog</Link>
                             </li>
                             <li className='list-group-item'>
-                                <Link to='/'>Contact</Link>
+                                <Link to='/contact'>Contact</Link>
                             </li>
                         </ul>
                     </div>

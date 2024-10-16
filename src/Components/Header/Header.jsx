@@ -46,12 +46,12 @@ const Header = () => {
                             <div className="cart-price">
                                 <span>$3.29</span>
                             </div>
-                            <div className="cart">
+                            <a href="/cart" className="cart">
                                 <Button className="cart-icon">
                                     <TbShoppingBag />
                                 </Button>
                                 <span className="cart-count">1</span>
-                            </div>
+                            </a>
 
                         </div>
                     </div>

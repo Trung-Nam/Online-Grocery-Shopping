@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer';
 import ProductDetails from './Components/Product/ProductDetails/ProductDetails';
 import Blog from './Pages/Blog/Blog';
 import Contact from './Pages/Contact/Contact';
+import Cart from './Pages/Cart/Cart';
 
 
 function App() {
@@ -21,9 +22,10 @@ function App() {
           <Route path="/product/:id" exact={true} element={<ProductDetails />} />
           <Route path="/blog" exact={true} element={<Blog />} />
           <Route path="/contact" exact={true} element={<Contact />} />
+          <Route path="/cart" exact={true} element={<Cart />} />
         </Routes>
+        <Footer />
       </LocationProvider>
-      <Footer />
     </BrowserRouter>
   );
 }

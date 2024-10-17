@@ -9,6 +9,8 @@ import ProductDetails from './Components/Product/ProductDetails/ProductDetails';
 import Blog from './Pages/Blog/Blog';
 import Contact from './Pages/Contact/Contact';
 import Cart from './Pages/Cart/Cart';
+import SignIn from './Pages/Authentication/SignIn/SignIn';
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
           <Route path="/blog" exact={true} element={<Blog />} />
           <Route path="/contact" exact={true} element={<Contact />} />
           <Route path="/cart" exact={true} element={<Cart />} />
+          <Route path="/signin" exact={true} element={<SignIn />} />
         </Routes>
         <Footer />
       </LocationProvider>

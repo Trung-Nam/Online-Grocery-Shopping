@@ -28,7 +28,7 @@ function SignIn() {
                                     <div className="col-12">
                                         <div className="mb-4">
                                             <h3>Sign in</h3>
-                                            <p>Don't have an account? <a href="#!" className="custom-color">Sign up</a></p>
+                                            <p>Don't have an account? <a href="/signup" className="custom-color">Sign up</a></p>
                                         </div>
                                     </div>
                                 </div>

@@ -10,6 +10,7 @@ import Blog from './Pages/Blog/Blog';
 import Contact from './Pages/Contact/Contact';
 import Cart from './Pages/Cart/Cart';
 import SignIn from './Pages/Authentication/SignIn/SignIn';
+import SignUp from './Pages/Authentication/SignUp/SignUp';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" exact={true} element={<Contact />} />
           <Route path="/cart" exact={true} element={<Cart />} />
           <Route path="/signin" exact={true} element={<SignIn />} />
+          <Route path="/signup" exact={true} element={<SignUp />} />
         </Routes>
         <Footer />
       </LocationProvider>

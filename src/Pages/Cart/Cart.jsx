@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './Cart.scss'
 const Cart = () => {
+    const [showAddressForm, setShowAddressForm] = useState(false);
     const [cartItems, setCartItems] = useState([
         { id: 1, name: 'All Natural Italian-Style Chicken Meatballs', price: 7.25, quantity: 1, img: require('../../assets/images/product-image-2.jpg') },
         { id: 2, name: "Angie's Boomchickapop Sweet & Salty Kettle Corn", price: 3.29, quantity: 1, img: require('../../assets/images/product-image-3.jpg') },
         { id: 3, name: 'Field Roast Chao Cheese Creamy Original', price: 19.50, quantity: 1, img: require('../../assets/images/product-image-3.jpg') }
     ]);
-
+    
     const [couponCode, setCouponCode] = useState('');
     const [shippingCost, setShippingCost] = useState(5.00);
 
@@ -34,6 +35,12 @@ const Cart = () => {
 
     const calculateTotal = () => {
         return calculateSubtotal() + shippingCost;
+    };
+
+
+
+    const handleAddressChangeClick = () => {
+        setShowAddressForm(!showAddressForm);
     };
 
 
@@ -155,33 +162,137 @@ const Cart = () => {
                                 <input
                                     type="text"
                                     className="form-control d-inline-block"
-                                    style={{ width: '200px', height: '44px',}}
+                                    style={{ width: '200px', height: '44px', }}
                                     placeholder="Coupon code"
                                     value={couponCode}
                                     onChange={(e) => setCouponCode(e.target.value)}
                                 />
                                 <button className="btn custom-btn ms-2" onClick={applyCoupon}>Apply coupon</button>
                             </div>
-                            <button className="btn custom-btn" onClick={() => setCartItems([])}>Remove All</button>
+                            <button className="btn custom-btn danger" onClick={() => setCartItems([])}>Remove All</button>
                         </div>
                     </div>
-                    <div className="cart__content-right col-3">
+                    <div className="cart__content-right col-3 border rounded">
                         {/* Cart totals */}
-                        <div className="cart-totals p-3 border rounded">
-                            <h5 className="mb-3">Cart Totals</h5>
-                            <div className="d-flex justify-content-between">
-                                <span>Subtotal</span>
-                                <span>${calculateSubtotal().toFixed(2)}</span>
+                        <div className="cart-totals p-3">
+                            <h6>Cart Totals</h6>
+                            <table cellSpacing={0} className='shop_table shop_table_responsive w-100'>
+                                <tbody>
+                                    <tr className="cart-subtotal">
+                                        <th>Subtotal</th>
+                                        <td data-title="Subtotal" className='text-end'>
+                                            <span className="price-amount amount">
+                                                <bdi>
+                                                    <span className="price-currencySymbol">$</span>30.04
+                                                </bdi>
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr className="shipping-totals shipping">
+                                        <th>Shipping</th>
+                                        <td data-title="Shipping" className='text-end'>
+                                            <ul id="shipping_method" className="shipping-methods">
+                                                <li>
+                                                    <label htmlFor="shipping_method">
+                                                        Flat rate:{" "}
+                                                        <span className="price-amount amount">
+                                                            <bdi>
+                                                                <span className="price-currencySymbol">$</span>5.00
+                                                            </bdi>
+                                                        </span>
+                                                    </label>
+                                                    <input
+                                                        type="radio"
+                                                        name="shipping_method"
+                                                        data-index="0"
+                                                        id="shipping_method"
+                                                        value="flat_rate:1"
+                                                        className="shipping_method"
+                                                        defaultChecked
+                                                    />
+                                                </li>
+                                                <li>
+                                                    <label htmlFor="shipping_method">Local pickup</label>
+                                                    <input
+                                                        type="radio"
+                                                        name="shipping_method"
+                                                        data-index="0"
+                                                        id="shipping_method"
+                                                        value="local_pickup:3"
+                                                        className="shipping_method"
+                                                    />
+                                                </li>
+                                            </ul>
+
+                                            <p className="shipping-destination">
+                                                Shipping to <strong>AL</strong>.
+                                            </p>
+
+                                            <div className='change-address-btn' onClick={handleAddressChangeClick}>
+                                                Change address
+                                            </div>
+
+                                            {showAddressForm && (
+                                                <div className="mt-3 ms-3">
+                                                    <div className="mb-3">
+                                                        <select className="form-select">
+                                                            <option>United States (US)</option>
+                                                            <option>Canada</option>
+                                                            <option>Mexico</option>
+                                                        </select>
+                                                    </div>
+                                                    <div className="mb-3">
+                                                        <select className="form-select">
+                                                            <option>Alabama</option>
+                                                            <option>Alaska</option>
+                                                            <option>Arizona</option>
+                                                        </select>
+                                                    </div>
+                                                    <div className="mb-3">
+                                                        <input
+                                                            type="text"
+                                                            className="form-control"
+                                                            placeholder="Town / City"
+                                                        />
+                                                    </div>
+                                                    <div className="mb-3">
+                                                        <input
+                                                            type="text"
+                                                            className="form-control"
+                                                            placeholder="ZIP Code"
+                                                        />
+                                                    </div>
+                                                    <button className="btn custom-btn">Update</button>
+                                                </div>
+                                            )}
+                                        </td>
+                                    </tr>
+                                    <tr className="order-total">
+                                        <th>Total</th>
+                                        <td data-title="Total" className='text-end'>
+                                            <strong>
+                                                <span className="price-amount amount">
+                                                    <bdi>
+                                                        <span className="price-currencySymbol">$</span>35.04
+                                                    </bdi>
+                                                </span>
+                                            </strong>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <div className="proceed-to-checkout">
+                                <a
+                                    href="/"
+                                    className="checkout-button button"
+                                >
+                                    Proceed to checkout
+                                </a>
                             </div>
-                            <div className="d-flex justify-content-between my-3">
-                                <span>Flat rate:</span>
-                                <span>${shippingCost.toFixed(2)}</span>
-                            </div>
-                            <div className="d-flex justify-content-between mb-3">
-                                <span>Total</span>
-                                <span><strong>${calculateTotal().toFixed(2)}</strong></span>
-                            </div>
-                            <button className="btn btn-checkout w-100">Proceed to checkout</button>
+
                         </div>
                     </div>
                 </div>

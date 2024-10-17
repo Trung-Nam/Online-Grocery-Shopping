@@ -1,5 +1,6 @@
 .wrapper {
     width: 100vw;
+
     .top-strip {
         padding: 8px 0;
         background-color: var(--color-primary);
@@ -29,7 +30,7 @@
         }
 
         .column-right {
-
+            padding-left: 0;
             .header-user,
             .cart-icon {
                 display: flex;
@@ -77,6 +78,12 @@
                     align-items: center;
 
                 }
+            }
+
+            .signin-btn {
+                padding: 17px 20px;
+                background-color: var(--color-primary);
+                color: var(--color-white);
             }
         }
 

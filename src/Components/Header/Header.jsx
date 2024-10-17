@@ -40,12 +40,20 @@ const Header = () => {
                         </div>
 
                         <div className="column-right d-flex col-sm-2 align-items-center justify-content-between me-auto">
+
+                            {/* when user is not logged in*/}
+                            {/* <a class="btn btn-primary signin-btn" href="/signin" role="button">SIGN IN</a> */}
+
+
+                            {/* when user logged in*/}
                             <Button className="header-user">
                                 <FiUser />
                             </Button>
                             <div className="cart-price">
                                 <span>$3.29</span>
                             </div>
+
+
                             <a href="/cart" className="cart">
                                 <Button className="cart-icon">
                                     <TbShoppingBag />
